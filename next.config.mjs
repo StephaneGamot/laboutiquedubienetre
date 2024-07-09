@@ -8,7 +8,18 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['tailwindui.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 

@@ -7,30 +7,27 @@ import Link from "next/link";
 import Logo from "./../../public/Images/logo.webp";
 
 const products = [
-	{ name: "Bols tibétains", description: "Get a better understanding of your traffic", href: "#" },
-	{ name: "Encens", description: "Speak directly to your customers", href: "#" },
-	{ name: "Sauge", description: "Your customers’ data will be safe and secure", href: "#" },
-	{ name: "Bougies", description: "Connect with third-party tools", href: "#" },
-	{ name: "Bijoux", description: "Build strategic funnels that will convert", href: "#" },
-	{ name: "Spiritualité", description: "Build strategic funnels that will convert", href: "#" },
-	{ name: "Vie saine", description: "Build strategic funnels that will convert", href: "#" },
-	{ name: "Pierres minérales", description: "Build strategic funnels that will convert", href: "#" },
-];
+	{ name: "Bols tibétains", description: "Bols chantants en métal fabriqués à la main.", href: "#" },
+	{ name: "Encens", description: "Encens naturels pour méditation.", href: "#" },
+	{ name: "Sauge", description: "Sauge pour purification énergétique.", href: "#" },
+	{ name: "Bougies", description: "Bougies parfumées apaisantes.", href: "#" },
+	{ name: "Bijoux", description: "Bijoux spirituels faits à la main.", href: "#" },
+	{ name: "Spiritualité", description: "Articles pour votre chemin spirituel.", href: "#" },
+	{ name: "Vie saine", description: "Produits pour un mode de vie sain.", href: "#" },
+	{ name: "Pierres minérales", description: "Pierres et cristaux énergétiques.", href: "#" },
+  ];
+  
 
-const about = [
-	{ name: "Testimonials", href: "#", description: "Learn more about our company values and mission to empower others" },
-	{ name: "Mentions légales", href: "#", description: "Looking for you next career opportunity? See all of our open positions" },
-	{
-		name: "Confidentialité",
-		href: "#",
-		description: "Get in touch with our dedicated support team or reach out on our community forums",
-	},
-	{ name: "Termes et conditions", href: "#", description: "Read our latest announcements and get perspectives from our team" },
-	{ name: "Livraison", href: "#", description: "Learn more about our company values and mission to empower others" },
-	{ name: "Paiement", href: "#", description: "Looking for you next career opportunity? See all of our open positions" },
-	{ name: "FAQ", href: "#", description: "Learn more about our company values and mission to empower others" },
-];
-
+  const about = [
+	{ name: "Testimonials", href: "#", description: "Avis de nos clients." },
+	{ name: "Mentions légales", href: "#", description: "Informations légales." },
+	{ name: "Confidentialité", href: "#", description: "Politique de confidentialité." },
+	{ name: "Termes et conditions", href: "#", description: "Conditions d'utilisation." },
+	{ name: "Livraison", href: "#", description: "Infos sur la livraison." },
+	{ name: "Paiement", href: "#", description: "Options de paiement." },
+	{ name: "FAQ", href: "#", description: "Questions fréquentes." },
+  ];
+  
 const navigation = {
 	categories: [
 		{

@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Tout les bijoux",
+      "price": "$199",
+      "rating": 5,
+      "reviewCount": 45,
+      "imageSrc": "/Images/bijoux/all-jewels.webp",
+      "imageAlt": "Gold Necklace",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "Bracelet",
+      "price": "$99",
+      "rating": 4,
+      "reviewCount": 30,
+      "imageSrc": "/Images/bijoux/bracelet/bracelet.webp",
+      "imageAlt": "Silver Ring",
+      "href": "#"
+    },
+    {
+      "id": 3,
+      "name": "Pendentifs",
+      "price": "$99",
+      "rating": 4,
+      "reviewCount": 30,
+      "imageSrc": "/Images/bijoux/pendentifs/pendentif.webp",
+      "imageAlt": "Silver Ring",
+      "href": "#"
+    },
+    {
+      "id": 4,
+      "name": "Bagues",
+      "price": "$99",
+      "rating": 4,
+      "reviewCount": 30,
+      "imageSrc": "/Images/bijoux/bagues/bague.webp",
+      "imageAlt": "Silver Ring",
+      "href": "#"
+    },
+    {
+      "id": 5,
+      "name": "Boucles d'oreilles",
+      "price": "$99",
+      "rating": 4,
+      "reviewCount": 30,
+      "imageSrc": "/Images/bijoux/boucles-oreilles/boucles-oreilles.webp",
+      "imageAlt": "Silver Ring",
+      "href": "#"
+    },
+    {
+      "id": 6,
+      "name": "Colliers",
+      "price": "$99",
+      "rating": 4,
+      "reviewCount": 30,
+      "imageSrc": "/Images/bijoux/colliers/collier.webp",
+      "imageAlt": "Silver Ring",
+      "href": "#"
+    }
+  ]
+  

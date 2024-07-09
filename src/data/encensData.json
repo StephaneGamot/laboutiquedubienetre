@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Tous les encens",
+      "price": "$5",
+      "rating": 4,
+      "reviewCount": 25,
+      "imageSrc": "https://example.com/incense-lavender.jpg",
+      "imageAlt": "Encens Lavande",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "Baton d'encens",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
+      "imageAlt": "Encens Santal",
+      "href": "#"
+    },
+    {
+      "id": 3,
+      "name": "Icone d'encens",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "https://example.com/incense-sandalwood.jpg",
+      "imageAlt": "Encens Santal",
+      "href": "#"
+    },
+    {
+      "id": 4,
+      "name": "Résine",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "https://example.com/incense-sandalwood.jpg",
+      "imageAlt": "Encens Santal",
+      "href": "#"
+    },
+    {
+      "id": 5,
+      "name": "Porte encens",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "https://example.com/incense-sandalwood.jpg",
+      "imageAlt": "Encens Santal",
+      "href": "#"
+    },
+    {
+      "id": 6,
+      "name": "Palo Santos",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "/Images/encens/palo-santo/poalo-santo.webp",
+      "imageAlt": "Encens Santal",
+      "href": "#"
+    }
+  ]
+  

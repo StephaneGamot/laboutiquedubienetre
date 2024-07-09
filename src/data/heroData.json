@@ -1,43 +1,109 @@
 [
     {
       "id": 1,
-      "name": "Organize Basic Set (Walnut)",
-      "price": "$149",
+      "name": "Bols Tibétains",
+      "price": "149 €",
       "rating": 5,
       "reviewCount": 38,
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg",
+      "imageSrc": "/Images/bols/bol.webp",
       "imageAlt": "TODO",
       "href": "#"
     },
     {
       "id": 2,
-      "name": "Organize Pen Holder",
+      "name": "Encens",
       "price": "$15",
       "rating": 5,
       "reviewCount": 18,
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg",
+      "imageSrc": "/images/encens/encens.webp",
       "imageAlt": "TODO",
       "href": "#"
     },
     {
       "id": 3,
-      "name": "Organize Sticky Note Holder",
+      "name": "Purification",
       "price": "$15",
       "rating": 5,
       "reviewCount": 14,
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg",
+      "imageSrc": "/images/sauge/sauge.webp",
       "imageAlt": "TODO",
       "href": "#"
     },
     {
       "id": 4,
-      "name": "Organize Phone Holder",
+      "name": "Bougie",
       "price": "$15",
       "rating": 4,
       "reviewCount": 21,
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-04.jpg",
+      "imageSrc": "/images/bougies/bougie.webp",
       "imageAlt": "TODO",
       "href": "#"
-    }
+    }, {
+        "id": 5,
+        "name": "Bijoux",
+        "price": "$149",
+        "rating": 5,
+        "reviewCount": 38,
+        "imageSrc": "/Images/bijoux/bijoux.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      },
+      {
+        "id": 6,
+        "name": "Spiritualité",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 18,
+        "imageSrc": "/Images/spiritualite/jardin-zen.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      },
+      {
+        "id": 7,
+        "name": "Vie Saine",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 14,
+        "imageSrc": "/Images/vie-saine/vie-saine.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      },
+      {
+        "id": 8,
+        "name": "Pierre Minérales",
+        "price": "$15",
+        "rating": 4,
+        "reviewCount": 21,
+        "imageSrc": "/Images/pierres/pierre-minerale.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      }, {
+        "id": 9,
+        "name": "Lampes",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 21,
+        "imageSrc": "/Images/lampes/lampe-sel.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      }, {
+        "id": 10,
+        "name": "Esotérique",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 21,
+        "imageSrc": "/Images/pendules/pendule.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      },{
+        "id": 11,
+        "name": "Gua Sha",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 21,
+        "imageSrc": "/Images/gua-sha/gua-sha.webp",
+        "imageAlt": "TODO",
+        "href": "#"
+      }
   ]
   

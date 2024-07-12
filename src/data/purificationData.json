@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Sauge",
+      "price": "$5",
+      "rating": 4,
+      "reviewCount": 25,
+      "imageSrc": "/Images/purification/sauges.webp",
+      "imageAlt": "vu sur l'intérieur d'un bol tibétain",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "sauge + sang de dragon",
+      "price": "$6",
+      "rating": 5,
+      "reviewCount": 30,
+      "imageSrc": "/Images/purification/sauge-sang-dragon.webp",
+      "imageAlt": "Bol tibétain en plaqué argent avec gravures",
+      "href": "#"
+    }
+  ]
+  

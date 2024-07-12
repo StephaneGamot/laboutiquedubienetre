@@ -8,10 +8,10 @@ import Logo from "./../../public/Images/logo.webp";
 
 const products = [
 	{ name: "Bols tibétains", description: "Bols chantants en métal fabriqués à la main.", href: "#" },
-	{ name: "Encens", description: "Encens naturels pour méditation.", href: "#" },
+	{ name: "Encens", description: "Encens naturels pour méditation.", href: "/encens" },
 	{ name: "Sauge", description: "Sauge pour purification énergétique.", href: "#" },
 	{ name: "Bougies", description: "Bougies parfumées apaisantes.", href: "#" },
-	{ name: "Bijoux", description: "Bijoux spirituels faits à la main.", href: "#" },
+	{ name: "Bijoux", description: "Bijoux spirituels faits à la main.", href: "jewel" },
 	{ name: "Spiritualité", description: "Articles pour votre chemin spirituel.", href: "#" },
 	{ name: "Vie saine", description: "Produits pour un mode de vie sain.", href: "#" },
 	{ name: "Pierres minérales", description: "Pierres et cristaux énergétiques.", href: "#" },

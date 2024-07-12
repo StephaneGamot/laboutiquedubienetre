@@ -7,7 +7,7 @@
       "reviewCount": 45,
       "imageSrc": "/Images/bijoux/all-jewels.webp",
       "imageAlt": "Gold Necklace",
-      "href": "#"
+      "href": "/jewel/all"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "reviewCount": 30,
       "imageSrc": "/Images/bijoux/bracelet/bracelet.webp",
       "imageAlt": "Silver Ring",
-      "href": "#"
+      "href": "/jewel/bracelet"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "reviewCount": 30,
       "imageSrc": "/Images/bijoux/pendentifs/pendentif.webp",
       "imageAlt": "Silver Ring",
-      "href": "#"
+      "href": "/jewel/pendentif"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "reviewCount": 30,
       "imageSrc": "/Images/bijoux/bagues/bague.webp",
       "imageAlt": "Silver Ring",
-      "href": "#"
+      "href": "/jewel/bague"
     },
     {
       "id": 5,
@@ -47,17 +47,7 @@
       "reviewCount": 30,
       "imageSrc": "/Images/bijoux/boucles-oreilles/boucles-oreilles.webp",
       "imageAlt": "Silver Ring",
-      "href": "#"
-    },
-    {
-      "id": 6,
-      "name": "Colliers",
-      "price": "$99",
-      "rating": 4,
-      "reviewCount": 30,
-      "imageSrc": "/Images/bijoux/colliers/collier.webp",
-      "imageAlt": "Silver Ring",
-      "href": "#"
+      "href": "/jewel/boucles-oreilles"
     }
   ]
   

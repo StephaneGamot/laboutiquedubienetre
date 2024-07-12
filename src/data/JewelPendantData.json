@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Bol tibétains plaqué or",
+    "price": "$5",
+    "rating": 4,
+    "reviewCount": 25,
+    "imageSrc": "/Images/bols/bol-tibetain-interieur.webp",
+    "imageAlt": "vu sur l'intérieur d'un bol tibétain",
+    "href": "#"
+  },
+  {
+    "id": 2,
+    "name": "Bol tibétain argent",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/bols/bol-tibetain-argent.webp",
+    "imageAlt": "Bol tibétain en plaqué argent avec gravures",
+    "href": "#"
+  }
+]

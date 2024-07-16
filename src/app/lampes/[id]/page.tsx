@@ -1,12 +1,12 @@
 "use client";
 
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { saltLightInterface } from '@/interface/saltLightInterface';
 import saltLightData from '@/data/saltLightData.json';
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { Disclosure, DisclosureButton, DisclosurePanel, Radio, RadioGroup, Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { Disclosure, DisclosureButton, DisclosurePanel, RadioGroup, Radio, TabGroup, TabList, Tab, TabPanel, TabPanels } from '@headlessui/react';
 import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 
 function classNames(...classes: string[]) {
@@ -14,23 +14,20 @@ function classNames(...classes: string[]) {
 }
 
 export default function ProductDetailsPage() {
-  const router = useRouter();
-  const { id } = router.query;
+  const params = useParams();
+  const id = Array.isArray(params.id) ? params.id[0] : params.id; // Ensure id is a single string
   const [product, setProduct] = useState<saltLightInterface | null>(null);
-  const [selectedColor, setSelectedColor] = useState<string | undefined>(undefined);
+  const [selectedColor, setSelectedColor] = useState<string | undefined>(""); // Ensure default value is set
 
   useEffect(() => {
     if (id) {
-      const foundProduct = saltLightData.find((p) => p.id === parseInt(id as string));
+      const foundProduct = saltLightData.find((p) => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
+      if (foundProduct && foundProduct.colors) {
+        setSelectedColor(foundProduct.colors[0].name); // Set default color
+      }
     }
   }, [id]);
-
-  useEffect(() => {
-    if (product && product.colors) {
-      setSelectedColor(product.colors[0].name);
-    }
-  }, [product]);
 
   if (!product) {
     return <div>Loading...</div>;
@@ -43,14 +40,21 @@ export default function ProductDetailsPage() {
           <TabGroup className="flex flex-col-reverse">
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
               <TabList className="grid grid-cols-4 gap-6">
-                {product.images?.map((image) => (
+                {product.images?.map((image, index) => (
                   <Tab
                     key={image.id}
                     className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                   >
                     <span className="sr-only">{image.name}</span>
                     <span className="absolute inset-0 overflow-hidden rounded-md">
-                      <Image alt={image.alt} src={image.src} className="h-full w-full object-cover object-center" width={200} height={300} />
+                      <Image 
+                        alt={image.alt} 
+                        src={image.src} 
+                        className="h-full w-full object-cover object-center" 
+                        width={200} 
+                        height={300} 
+                        priority={index === 0} // Add priority to the first image
+                      />
                     </span>
                     <span
                       aria-hidden="true"
@@ -64,7 +68,14 @@ export default function ProductDetailsPage() {
             <TabPanels className="aspect-h-1 aspect-w-1 w-full">
               {product.images?.map((image) => (
                 <TabPanel key={image.id}>
-                  <Image alt={image.alt} src={image.src} className="h-full w-full object-cover object-center sm:rounded-lg" width={200} height={300} />
+                  <Image 
+                    alt={image.alt} 
+                    src={image.src} 
+                    className="h-full w-full object-cover object-center sm:rounded-lg" 
+                    width={200} 
+                    height={300} 
+                    priority={image.id === 1} // Add priority to the first image
+                  />
                 </TabPanel>
               ))}
             </TabPanels>

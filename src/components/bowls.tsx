@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { BolsInterface } from '../interface/bolsInterface';
+import Link from 'next/link';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -14,7 +15,7 @@ export default function Bowls({ products }: BowlsProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
-        <h2 className="sr-only">Jewelry</h2>
+        <h2 className="sr-only">Lampe de sel</h2>
 
         <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
@@ -30,10 +31,10 @@ export default function Bowls({ products }: BowlsProps) {
               </div>
               <div className="pb-4 pt-10 text-center">
                 <h3 className="text-sm font-medium text-gray-900">
-                  <a href={product.href}>
+                  <Link href={`/lampes/${product.id}`}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}
-                  </a>
+                  </Link>
                 </h3>
                 <div className="mt-3 flex flex-col items-center">
                   <p className="sr-only">{product.rating} out of 5 stars</p>

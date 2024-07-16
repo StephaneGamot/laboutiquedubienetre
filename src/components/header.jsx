@@ -7,14 +7,18 @@ import Link from "next/link";
 import Logo from "./../../public/Images/logo.webp";
 
 const products = [
-	{ name: "Bols tibétains", description: "Bols chantants en métal fabriqués à la main.", href: "#" },
+	{ name: "Bols tibétains", description: "Bols chantants en métal.", href: "/bols-tibetains" },
 	{ name: "Encens", description: "Encens naturels pour méditation.", href: "/encens" },
-	{ name: "Sauge", description: "Sauge pour purification énergétique.", href: "#" },
-	{ name: "Bougies", description: "Bougies parfumées apaisantes.", href: "#" },
-	{ name: "Bijoux", description: "Bijoux spirituels faits à la main.", href: "jewel" },
-	{ name: "Spiritualité", description: "Articles pour votre chemin spirituel.", href: "#" },
-	{ name: "Vie saine", description: "Produits pour un mode de vie sain.", href: "#" },
-	{ name: "Pierres minérales", description: "Pierres et cristaux énergétiques.", href: "#" },
+	{ name: "Purification", description: "Sauge pour purification énergétique.", href: "/purification" },
+	{ name: "Bougies", description: "Bougies parfumées apaisantes.", href: "/bougies" },
+	{ name: "Bijoux", description: "Bijoux spirituels faits à la main.", href: "/bijoux" },
+	{ name: "Spiritualité", description: "Articles pour votre chemin spirituel.", href: "/spiritualite" },
+	{ name: "Vie saine", description: "Produits pour un mode de vie sain.", href: "/vie-saine" },
+	{ name: "Pierres minérales", description: "Pierres et cristaux énergétiques.", href: "/pierre-minerale" },
+	{ name: "Lampes", description: "Lampes de sel ou sélénite", href: "/lampes" },
+	{ name: "Esotérique", description: "Articles esotériques", href: "/esoterique" },
+	{ name: "Gua Sha", description: "Produits gua sha", href: "/gua-sha" },
+	{ name: "autres", description: "Un peu de tout", href: "/autre" },
   ];
   
 
@@ -48,7 +52,7 @@ export default function Example() {
 
 	return (
 		<div className="bg-white">
-			<header className="relative bg-white">
+			<header className="relative bg-white z-10">
 				<nav aria-label="Top" className="mx-auto max-w-7xl sm:px-6 lg:px-8">
 					<div className="border-b border-gray-200 px-4 pb-14 sm:px-0 sm:pb-0">
 						<div className="flex h-16 items-center justify-between">
@@ -91,7 +95,7 @@ export default function Example() {
 														<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 pb-12 pt-10">
 															{category.items.map((item) => (
 																<div key={item.name} className="flex flex-col items-start">
-																	<Link href={item.href} className="text-sm font-medium text-grisPierre hover:text-emerald-700">
+																	<Link href={item.href} className='text-sm font-bold text-grisPierre hover:text-emerald-700'>
 																		{item.name}
 																	</Link>
 																	<p className="mt-1 text-sm text-gray-500">{item.description}</p>

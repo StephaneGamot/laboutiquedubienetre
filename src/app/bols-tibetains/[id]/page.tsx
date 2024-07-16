@@ -2,8 +2,8 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { saltLightInterface } from '@/interface/saltLightInterface';
-import saltLightData from '@/data/saltLightData.json';
+import { BolInterface } from '@/interface/bolInterface';
+import bolData from '@/data/bolData.json'
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';
 import { StarIcon as OutlineStarIcon } from '@heroicons/react/24/outline';
@@ -17,12 +17,12 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id; 
-  const [product, setProduct] = useState<saltLightInterface | null>(null);
+  const [product, setProduct] = useState<BolInterface | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | undefined>(""); 
 
   useEffect(() => {
     if (id) {
-      const foundProduct = saltLightData.find((p) => p.id === parseInt(id, 10));
+      const foundProduct = bolData.find((p) => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
       if (foundProduct && foundProduct.colors) {
         setSelectedColor(foundProduct.colors[0].name); 

@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { Product } from '../interface/productInterface';
+import { saltLightInterface } from '@/interface/saltLightInterface';
+import Link from 'next/link';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
 interface SaltLightProps {
-  products: Product[];
+  products: saltLightInterface[];
 }
 
-export default function SaltLight ({ products }: SaltLightProps) {
+export default function SaltLight({ products }: SaltLightProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
@@ -30,10 +31,10 @@ export default function SaltLight ({ products }: SaltLightProps) {
               </div>
               <div className="pb-4 pt-10 text-center">
                 <h3 className="text-sm font-medium text-gray-900">
-                  <a href={product.href}>
+                  <Link href={`/lampes/${product.id}`}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}
-                  </a>
+                  </Link>
                 </h3>
                 <div className="mt-3 flex flex-col items-center">
                   <p className="sr-only">{product.rating} out of 5 stars</p>

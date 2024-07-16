@@ -1,19 +1,18 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import SaltLight from '../../components/saltLight';
+import SaltLight from '@/components/saltLight';
 import { saltLightInterface } from '@/interface/saltLightInterface';
-import guaShaData from '../../data/guaShaData.json';
+import saltLightData from '@/data/saltLightData.json';
 
 export default function SaltLightPage() {
   const [products, setProducts] = useState<saltLightInterface[]>([]);
 
   useEffect(() => {
-    // Simulate fetching data from a local file
-    setProducts(guaShaData);
+    setProducts(saltLightData);
   }, []);
 
-  if (!products) {
+  if (products.length === 0) {
     return <div>Loading...</div>;
   }
 
@@ -24,7 +23,7 @@ export default function SaltLightPage() {
           La Boutique du Bien-être & Spiritualité
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-emerald-700 mx-auto">
-          Découvrez notre collection d&apos;encens soigneusement sélectionnés pour votre bien-être.
+          Découvrez notre collection de lampes de sel soigneusement sélectionnées pour votre bien-être.
         </p>
         <SaltLight products={products} />
       </div>

@@ -1,63 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "Tous les encens",
-      "price": "$5",
-      "rating": 4,
-      "reviewCount": 25,
-      "imageSrc": "/Images/encens/multiples-encens.webp",
-      "imageAlt": "Encens Lavande",
-      "href": "#"
-    },
-    {
-      "id": 2,
-      "name": "Batons d'encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 3,
-      "name": "Cones d'encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/cones/cones-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 4,
-      "name": "Résine",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/resines/resine.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 5,
-      "name": "Porte encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/portes-encens/portes-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 6,
-      "name": "Palo Santos",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/palo-santo/poalo-santo.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Tous les lampes",
+    "price": "$5",
+    "rating": 4,
+    "reviewCount": 25,
+    "imageSrc": "/Images/encens/multiples-encens.webp",
+    "imageAlt": "Lampe a la Lavande",
+    "href": "#"
+  },
+  {
+    "id": 2,
+    "name": "Lampe rose",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
+    "imageAlt": "Lampe Santal",
+    "href": "#"
+  },
+  {
+    "id": 3,
+    "name": "Cones d'encens",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/cones/cones-encens.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#"
+  },
+  {
+    "id": 4,
+    "name": "Lampe rouge",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/resines/resine.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#"
+  },
+  {
+    "id": 5,
+    "name": "Porte encens",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/portes-encens/portes-encens.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#"
+  },
+  {
+    "id": 6,
+    "name": "Palo Santos",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/palo-santo/poalo-santo.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#"
+  }
+]

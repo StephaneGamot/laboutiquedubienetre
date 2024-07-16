@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { Product } from '../interface/productInterface';
+import { useRouter } from 'next/router';
+import productData from '@/data/productData.json';
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
@@ -11,6 +14,12 @@ interface SpiritualityProps {
 }
 
 export default function Spirituality ({ products }: SpiritualityProps) {
+  const router = useRouter();
+
+  const handleProductClick = (id: number) => {
+    router.push(`/product/${id}`);
+  };
+  
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

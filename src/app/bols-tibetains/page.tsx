@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Bowls from '@/components/products/Bowls';
-import { BolInterface } from '../../interface/BolInterface';
-import BolsData from '../../data/bolsData.json';
+import { BolInterface } from '@/interface/BolInterface';
+import BolsData from '@/data/bolsData.json';
 
 export default function BowlsPage() {
   const [products, setProducts] = useState<BolInterface[]>([]);

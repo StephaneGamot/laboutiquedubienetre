@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import Guasha from "@/components/products/GuaSha";
 import { GuaShaInterface } from "@/interface/GuaShaInterface";
-import guaShaData from "@/data/guaShaData.json";
+import GuaShaData from "@/data/guaShaData.json";
 
 export default function GuaShaPage() {
 	const [products, setProducts] = useState<GuaShaInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from a local file
-		setProducts(guaShaData);
+		setProducts(GuaShaData);
 	}, []);
 
 	if (!products) {

@@ -1,4 +1,4 @@
-export interface SpiritualityInterface {
+export interface SpiritualitesInterface {
   id: number;
   name: string;
   price: string;

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Hero from "./../components/Hero";
+import Hero from "@/components/hero";
 import { ProductInterface } from "@/interface/ProductInterface";
 import HeroData from "../data/heroData.json";
 

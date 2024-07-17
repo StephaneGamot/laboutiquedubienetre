@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { BolsInterface } from '../interface/bolsInterface';
+import { BolInterface } from '@/interface/BolInterface';
 import Link from 'next/link';
 
 function classNames(...classes: string[]) {
@@ -8,7 +8,7 @@ function classNames(...classes: string[]) {
 }
 
 interface BowlsProps {
-  products: BolsInterface[];
+  products: BolInterface[];
 }
 
 export default function Bowls({ products }: BowlsProps) {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { EB_Garamond, Roboto, Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Nav from '@/components/nav/nav'
-import Header from "./../components/header";
+
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400", "700"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });

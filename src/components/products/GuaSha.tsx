@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { BolsInterface } from '../../interface/bolsInterface';
+import { GuaShaInterface } from '@/interface/GuaShaInterface';
 import Link from 'next/link';
 
 function classNames(...classes: string[]) {
@@ -8,7 +8,7 @@ function classNames(...classes: string[]) {
 }
 
 interface GuaShaProps {
-  products: BolsInterface[];
+  products: GuaShaInterface[];
 }
 
 export default function GuaSha ({ products }: GuaShaProps) {

@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { JewelInterface } from "@/interface/JewelryInterface";
+import { JewelInterface } from "@/interface/JewelsInterface";
 import jewelBraceletData from "@/data/jewelBraceletData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";

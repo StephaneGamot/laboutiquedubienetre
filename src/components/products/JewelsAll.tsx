@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { JewelInterface } from "../../interface/JewelryInterface";
+import { JewelInterface } from "../../interface/JewelsInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {

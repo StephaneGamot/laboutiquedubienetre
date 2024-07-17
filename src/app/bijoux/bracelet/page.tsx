@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import JewelBracelet from "@/components/products/JewelBracelet";
-import { JewelInterface } from "../../../interface/JewelryInterface";
+import { JewelInterface } from "../../../interface/JewelsInterface";
 import jewelBraceletData from "./../../../data/jewelAllData.json";
 
 export default function JewelBraceletPage() {

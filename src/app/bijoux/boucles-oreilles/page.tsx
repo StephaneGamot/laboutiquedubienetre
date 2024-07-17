@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import JewelEarRing from "@/components/products/JewelEarRing";
-import { JewelInterface } from "../../../interface/JewelryInterface";
+import { JewelInterface } from "../../../interface/JewelsInterface";
 import jewelEarRingData from "./../../../data/jewelEaringData.json";
 
 export default function JewelEarRingPage() {

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Jewels from "@/components/products/Jewels";
-import { JewelInterface } from "../../interface/JewelryInterface";
+import { JewelInterface } from "../../interface/JewelsInterface";
 import jewelsData from "../../data/jewelsData.json";
 
 export default function JewelsPage() {

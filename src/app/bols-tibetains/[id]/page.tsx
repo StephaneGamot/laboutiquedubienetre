@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { BolInterface } from '@/interface/BolInterface';
+import { BolInterface } from './../../../interface/BolInterface';
 import bolData from '@/data/bolData.json'
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { PurificationInterface } from "@/interface/PurificationInterface";
+import { PurificationsInterface } from "@/interface/PurificationsInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface PurificationProps {
-	products: PurificationInterface[];
+	products: PurificationsInterface[];
 }
 
-export default function Jewels({ products }: PurificationProps) {
+export default function Purifications({ products }: PurificationProps) {
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

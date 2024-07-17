@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Purification from "@/components/products/Purification";
-import { PurificationInterface } from "@/interface/PurificationInterface";
-import purificationData from "@/data/purificationData.json";
+import Purification from "@/components/products/Purifications";
+import { PurificationsInterface } from "@/interface/PurificationsInterface";
+import PurificationsData from "@/data/purificationsData.json";
 
 export default function PurificationPage() {
-	const [products, setProducts] = useState<PurificationInterface[]>([]);
+	const [products, setProducts] = useState<PurificationsInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from an API or a file
-		setProducts(purificationData);
+		setProducts(PurificationsData);
 	}, []);
 
 	if (!products) {

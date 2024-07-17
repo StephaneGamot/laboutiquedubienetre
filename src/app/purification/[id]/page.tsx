@@ -2,8 +2,8 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { PurificationInterface } from '@/interface/PurificationInterface';
-import PurificationData from '@/data/purificationData.json';
+import { PurificationsInterface } from '@/interface/PurificationsInterface';
+import PurificationsData from '@/data/purificationsData.json';
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';
 import { StarIcon as OutlineStarIcon } from '@heroicons/react/24/outline';
@@ -17,12 +17,12 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id; 
-  const [product, setProduct] = useState<PurificationInterface | null>(null);
+  const [product, setProduct] = useState<PurificationsInterface | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | undefined>(""); 
 
   useEffect(() => {
     if (id) {
-      const foundProduct = PurificationData.find((p) => p.id === parseInt(id, 10));
+      const foundProduct = PurificationsData.find((p) => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
       if (foundProduct && foundProduct.colors) {
         setSelectedColor(foundProduct.colors[0].name); 

@@ -1,4 +1,4 @@
-export interface PurificationInterface {
+export interface PurificationsInterface {
   id: number;
   name: string;
   price: string;

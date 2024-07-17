@@ -2,8 +2,8 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { GuaShaInterface } from "@/interface/GuaShaInterface";
-import GuaShaData from "@/data/guaShaData.json";
+import { GuaShasInterface } from "@/interface/GuaShasInterface";
+import GuaShasData from "@/data/guaShasData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as OutlineStarIcon } from "@heroicons/react/24/outline";
@@ -17,12 +17,12 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
 	const params = useParams();
 	const id = Array.isArray(params.id) ? params.id[0] : params.id;
-	const [product, setProduct] = useState<GuaShaInterface | null>(null);
+	const [product, setProduct] = useState<GuaShasInterface | null>(null);
 	const [selectedColor, setSelectedColor] = useState<string | undefined>("");
 
 	useEffect(() => {
 		if (id) {
-			const foundProduct = GuaShaData.find((p) => p.id === parseInt(id, 10));
+			const foundProduct = GuaShasData.find((p) => p.id === parseInt(id, 10));
 			setProduct(foundProduct || null);
 			if (foundProduct && foundProduct.colors) {
 				setSelectedColor(foundProduct.colors[0].name);

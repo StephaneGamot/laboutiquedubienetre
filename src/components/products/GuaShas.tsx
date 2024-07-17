@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { GuaShaInterface } from '@/interface/GuaShaInterface';
+import { GuaShasInterface } from '@/interface/GuaShasInterface';
 import Link from 'next/link';
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface GuaShaProps {
-  products: GuaShaInterface[];
+  products: GuaShasInterface[];
 }
 
-export default function GuaSha ({ products }: GuaShaProps) {
+export default function GuaShas ({ products }: GuaShaProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

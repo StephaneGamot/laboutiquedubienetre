@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Guasha from "@/components/products/GuaSha";
-import { GuaShaInterface } from "@/interface/GuaShaInterface";
-import GuaShaData from "@/data/guaShaData.json";
+import Guashas from "@/components/products/GuaShas";
+import { GuaShasInterface } from "@/interface/GuaShasInterface";
+import GuaShasData from "@/data/guaShasData.json";
 
 export default function GuaShaPage() {
-	const [products, setProducts] = useState<GuaShaInterface[]>([]);
+	const [products, setProducts] = useState<GuaShasInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from a local file
-		setProducts(GuaShaData);
+		setProducts(GuaShasData);
 	}, []);
 
 	if (!products) {
@@ -22,7 +22,7 @@ export default function GuaShaPage() {
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 				<h1 className="text-3xl font-semibold tracking-tight text-emerald-800 sm:text-4xl lg:text-5xl">La Boutique du Bien-être & Spiritualité</h1>
 				<p className="mt-4 max-w-2xl text-lg text-emerald-700 mx-auto">Découvrez notre collection d&apos;encens soigneusement sélectionnés pour votre bien-être.</p>
-				<Guasha products={products} />
+				<Guashas products={products} />
 			</div>
 		</main>
 	);

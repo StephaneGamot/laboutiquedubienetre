@@ -1,4 +1,4 @@
-export interface GuaShaInterface {
+export interface GuaShasInterface {
   id: number;
   name: string;
   price: string;

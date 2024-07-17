@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { EsotericInterface } from "@/interface/EsotericInterface";
-import esoteriqueData from "@/data/esoteriqueData.json";
+import EsotericData from "@/data/esotericData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as OutlineStarIcon } from "@heroicons/react/24/outline";
@@ -22,7 +22,7 @@ export default function ProductDetailsPage() {
 
 	useEffect(() => {
 		if (id) {
-			const foundProduct = esoteriqueData.find((p) => p.id === parseInt(id, 10));
+			const foundProduct = EsotericData.find((p) => p.id === parseInt(id, 10));
 			setProduct(foundProduct || null);
 			if (foundProduct && foundProduct.colors) {
 				setSelectedColor(foundProduct.colors[0].name);

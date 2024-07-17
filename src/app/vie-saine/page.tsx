@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import HealthyLife from '@/components/products/HealthyLife';
-import { HealthyLifeInterface } from '@/interface/HealthyLifeInterface';
-import HealthyLifeData from '@/data/healthyLifeData.json';
+import VieSaine from '@/components/products/VieSaine';
+import { VieSaineInterface } from '@/interface/VieSaineInterface';
+import VieSaineData from '@/data/vieSaineData.json';
 
-export default function HealthyLifePage() {
-  const [products, setProducts] = useState<HealthyLifeInterface[]>([]);
+export default function VieSainePage() {
+  const [products, setProducts] = useState<VieSaineInterface[]>([]);
 
   useEffect(() => {
     // Simulate fetching data from a local file
-    setProducts(HealthyLifeData);
+    setProducts(VieSaineData);
   }, []);
 
   if (!products) {
@@ -26,7 +26,7 @@ export default function HealthyLifePage() {
         <p className="mt-4 max-w-2xl text-lg text-emerald-700 mx-auto">
           Découvrez notre collection d&apos;encens soigneusement sélectionnés pour votre bien-être.
         </p>
-        <HealthyLife products={products} />
+        <VieSaine products={products} />
       </div>
     </main>
   );

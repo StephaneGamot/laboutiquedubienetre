@@ -1,4 +1,4 @@
-export interface HealthyLifeInterface {
+export interface VieSaineInterface {
   id: number;
   name: string;
   price: string;

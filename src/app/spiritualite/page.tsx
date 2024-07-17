@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import Spiritualites from "@/components/products/Spiritualites";
 import { SpiritualitesInterface } from "@/interface/SpiritualitesInterface";
-import healthyLifeData from "@/data/healthyLifeData.json";
+import SpiritualitesData from "@/data/spiritualitesData.json";
 
 export default function SpiritualityPage() {
 	const [products, setProducts] = useState<SpiritualitesInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from a local file
-		setProducts(healthyLifeData);
+		setProducts(SpiritualitesData);
 	}, []);
 
 	if (!products) {

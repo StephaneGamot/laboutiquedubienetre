@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { HealthyLifeInterface } from '../../interface/HealthyLifeInterface';
+import { VieSaineInterface } from '@/interface/VieSaineInterface';
 import Link from 'next/link';
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface HealthyLifeProps {
-  products: HealthyLifeInterface[];
+  products: VieSaineInterface[];
 }
 
-export default function HealthyLife ({ products }: HealthyLifeProps) {
+export default function VieSaine ({ products }: HealthyLifeProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

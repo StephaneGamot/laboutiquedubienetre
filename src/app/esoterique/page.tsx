@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import Esoterique from "@/components/products/Esoterique";
 import { EsoteriqueInterface } from "@/interface/EsoteriqueInterface";
-import EsotericData from "@/data/esotericData.json";
+import EsoteriqueData from "@/data/esoteriqueData.json";
 
 export default function EsotericPage() {
 	const [products, setProducts] = useState<EsoteriqueInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from a local file
-		setProducts(EsotericData);
+		setProducts(EsoteriqueData);
 	}, []);
 
 	if (!products) {

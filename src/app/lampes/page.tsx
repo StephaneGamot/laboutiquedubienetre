@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SaltLight from "@/components/products/SaltLight";
-import { SaltLightInterface } from "@/interface/SaltLightInterface";
-import saltLightData from "@/data/saltLightData.json";
+import SaltLight from "@/components/products/Lampes";
+import { LampesInterface } from "@/interface/LampesInterface";
+import LampesData from "@/data/lampesData.json";
 
-export default function SaltLightPage() {
-	const [products, setProducts] = useState<SaltLightInterface[]>([]);
+export default function LampesPage() {
+	const [products, setProducts] = useState<LampesInterface[]>([]);
 
 	useEffect(() => {
-		setProducts(saltLightData);
+		setProducts(LampesData);
 	}, []);
 
 	if (products.length === 0) {

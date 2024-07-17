@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { SaltLightInterface } from "@/interface/SaltLightInterface";
+import { LampesInterface } from "@/interface/LampesInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface SaltLightProps {
-	products: SaltLightInterface[];
+	products: LampesInterface[];
 }
 
-export default function SaltLight({ products }: SaltLightProps) {
+export default function Lampes({ products }: SaltLightProps) {
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

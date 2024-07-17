@@ -1,16 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import Hero from "@/components/hero";
-import { ProductInterface } from "@/interface/ProductInterface";
+import { ProductsInterface } from "@/interface/ProductsInterface";
 import HeroData from "../data/heroData.json";
 
 export default function Home() {
-	const [products, setProducts] = useState<ProductInterface[]>(HeroData as ProductInterface[]);
+	const [products, setProducts] = useState<ProductsInterface[]>(HeroData as ProductsInterface[]);
 	const [error, setError] = useState<string | null>(null);
 
 	useEffect(() => {
 		// No need to fetch, data is imported directly
-		setProducts(HeroData as ProductInterface[]);
+		setProducts(HeroData as ProductsInterface[]);
 	}, []);
 
 	if (error) {

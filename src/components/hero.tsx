@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { ProductInterface } from "../interface/ProductInterface";
+import { ProductInterface } from "../interface/ProductsInterface";
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(" ");

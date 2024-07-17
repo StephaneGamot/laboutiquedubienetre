@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { MineralsInterface } from "@/interface/MineralsInterface";
+import { MineralesInterface } from "@/interface/MineralesInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface MineralProps {
-	products: MineralsInterface[];
+	products: MineralesInterface[];
 }
 
-export default function Minerals({ products }: MineralProps) {
+export default function Minerales({ products }: MineralProps) {
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

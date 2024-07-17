@@ -1,4 +1,4 @@
-export interface MineralsInterface {
+export interface MineralesInterface {
   id: number;
   name: string;
   price: string;

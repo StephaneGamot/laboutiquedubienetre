@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { BolInterface } from '@/interface/BolInterface';
+import { BolsInterface } from '@/interface/BolsInterface';
 import BolsData from '@/data/bolsData.json'
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';
@@ -17,7 +17,7 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id; 
-  const [product, setProduct] = useState<BolInterface | null>(null);
+  const [product, setProduct] = useState<BolsInterface | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | undefined>(""); 
 
   useEffect(() => {

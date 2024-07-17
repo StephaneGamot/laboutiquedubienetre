@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import Bols from '@/components/products/Bols';
-import { BolInterface } from '@/interface/BolInterface';
+import { BolsInterface } from '@/interface/BolsInterface';
 import BolsData from '@/data/bolsData.json';
 
 export default function BowlsPage() {
-  const [products, setProducts] = useState<BolInterface[]>([]);
+  const [products, setProducts] = useState<BolsInterface[]>([]);
 
   useEffect(() => {
     // Simulate fetching data from an API or a file

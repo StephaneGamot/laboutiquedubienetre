@@ -1,4 +1,4 @@
-export interface BolInterface {
+export interface BolsInterface {
   id: number;
   name: string;
   price: string;

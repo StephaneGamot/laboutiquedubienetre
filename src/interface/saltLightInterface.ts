@@ -1,4 +1,4 @@
-export interface saltLightInterface {
+export interface SaltLightInterface {
   id: number;
   name: string;
   price: string;

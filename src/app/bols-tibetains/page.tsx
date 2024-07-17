@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Bowls from '@/components/bowls';
-import { BolsInterface } from '../../interface/bolsInterface';
+import Bowls from '@/components/products/Bowls';
+import { BolInterface } from '../../interface/BolInterface';
 import BolsData from '../../data/bolsData.json';
 
 export default function BowlsPage() {
-  const [products, setProducts] = useState<BolsInterface[]>([]);
+  const [products, setProducts] = useState<BolInterface[]>([]);
 
   useEffect(() => {
     // Simulate fetching data from an API or a file

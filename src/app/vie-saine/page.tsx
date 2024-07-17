@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import HealthyLife from '@/components/healthyLife';
-import { healthyLifeInterface } from '@/interface/healthyLifeInterface';
-import healthyLifeData from '@/data/healthyLifeData.json';
+import HealthyLife from '@/components/products/HealthyLife';
+import { HealthyLifeInterface } from '@/interface/HealthyLifeInterface';
+import HealthyLifeData from '@/data/healthyLifeData.json';
 
 export default function HealthyLifePage() {
-  const [products, setProducts] = useState<healthyLifeInterface[]>([]);
+  const [products, setProducts] = useState<HealthyLifeInterface[]>([]);
 
   useEffect(() => {
     // Simulate fetching data from a local file
-    setProducts(healthyLifeData);
+    setProducts(HealthyLifeData);
   }, []);
 
   if (!products) {

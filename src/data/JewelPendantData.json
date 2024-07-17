@@ -1,22 +1,54 @@
 [
   {
     "id": 1,
-    "name": "Bol tibétains plaqué or",
+    "name": "Tous les lampes",
     "price": "$5",
-    "rating": 4,
+    "rating": 4.5,
     "reviewCount": 25,
-    "imageSrc": "/Images/bols/bol-tibetain-interieur.webp",
-    "imageAlt": "vu sur l'intérieur d'un bol tibétain",
-    "href": "#"
+    "imageSrc": "/Images/encens/multiples-encens.webp",
+    "imageAlt": "Lampe a la Lavande",
+    "href": "#",
+    "description": "Description for Tous les lampes",
+    "colors": [
+      { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "Bol tibétain argent",
+    "name": "Lampe rose",
     "price": "$6",
     "rating": 5,
     "reviewCount": 30,
-    "imageSrc": "/Images/bols/bol-tibetain-argent.webp",
-    "imageAlt": "Bol tibétain en plaqué argent avec gravures",
-    "href": "#"
+    "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
+    "imageAlt": "Lampe Santal",
+    "href": "#",
+    "description": "Description for Lampe rose",
+    "colors": [
+      { "name": "Pink", "bgColor": "bg-pink-500", "selectedColor": "ring-pink-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
   }
 ]

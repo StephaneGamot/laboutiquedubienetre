@@ -1,63 +1,158 @@
 [
-    {
-      "id": 1,
-      "name": "Tous les encens",
-      "price": "$5",
-      "rating": 4,
-      "reviewCount": 25,
-      "imageSrc": "/Images/encens/multiples-encens.webp",
-      "imageAlt": "Encens Lavande",
-      "href": "#"
-    },
-    {
-      "id": 2,
-      "name": "Batons d'encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 3,
-      "name": "Cones d'encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/cones/cones-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 4,
-      "name": "Résine",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/resines/resine.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 5,
-      "name": "Porte encens",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/portes-encens/portes-encens.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    },
-    {
-      "id": 6,
-      "name": "Palo Santos",
-      "price": "$6",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/palo-santo/poalo-santo.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Tous les lampes",
+    "price": "$5",
+    "rating": 4.5,
+    "reviewCount": 25,
+    "imageSrc": "/Images/encens/multiples-encens.webp",
+    "imageAlt": "Lampe a la Lavande",
+    "href": "#",
+    "description": "Description for Tous les lampes",
+    "colors": [
+      { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Lampe rose",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
+    "imageAlt": "Lampe Santal",
+    "href": "#",
+    "description": "Description for Lampe rose",
+    "colors": [
+      { "name": "Pink", "bgColor": "bg-pink-500", "selectedColor": "ring-pink-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cones d'encens",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/cones/cones-encens.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#",
+    "description": "Description for Cones d'encens",
+    "colors": [
+      { "name": "Yellow", "bgColor": "bg-yellow-500", "selectedColor": "ring-yellow-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/cones/cones-encens.webp", "alt": "Encens Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/cones/cones-encens.webp", "alt": "Encens Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/cones/cones-encens.webp", "alt": "Encens Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/cones/cones-encens.webp", "alt": "Encens Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lampe rouge",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/resines/resine.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#",
+    "description": "Description for Lampe rouge",
+    "colors": [
+      { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/resines/resine.webp", "alt": "Encens Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/resines/resine.webp", "alt": "Encens Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/resines/resine.webp", "alt": "Encens Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/resines/resine.webp", "alt": "Encens Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Porte encens",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/portes-encens/portes-encens.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#",
+    "description": "Description for Porte encens",
+    "colors": [
+      { "name": "Green", "bgColor": "bg-green-500", "selectedColor": "ring-green-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Encens Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Encens Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Encens Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Encens Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Palo Santos",
+    "price": "$6",
+    "rating": 5,
+    "reviewCount": 30,
+    "imageSrc": "/Images/encens/palo-santo/poalo-santo.webp",
+    "imageAlt": "Encens Santal",
+    "href": "#",
+    "description": "Description for Palo Santos",
+    "colors": [
+      { "name": "Blue", "bgColor": "bg-blue-500", "selectedColor": "ring-blue-500" }
+    ],
+    "images": [
+      { "id": 1, "name": "Image 1", "src": "/Images/encens/palo-santo/poalo-santo.webp", "alt": "Encens Santal" },
+      { "id": 2, "name": "Image 2", "src": "/Images/encens/palo-santo/poalo-santo.webp", "alt": "Encens Santal" },
+      { "id": 3, "name": "Image 3", "src": "/Images/encens/palo-santo/poalo-santo.webp", "alt": "Encens Santal" },
+      { "id": 4, "name": "Image 4", "src": "/Images/encens/palo-santo/poalo-santo.webp", "alt": "Encens Santal" }
+    ],
+    "details": [
+      {
+        "name": "Detail 1",
+        "items": ["Item 1", "Item 2"]
+      }
+    ]
+  }
+]

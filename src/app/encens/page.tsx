@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Encens from '../../components/Encens';
-import { Product } from '../../interface/productInterface';
-import encensData from '../../data/encensData.json';
+import Encens from '@/components/products/Encens';
+import { EncensInterface } from '@/interface/EncensInterface';
+import encensData from '@/data/encensData.json';
 
 export default function EncensPage() {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<EncensInterface[]>([]);
 
   useEffect(() => {
     // Simulate fetching data from a local file

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { ProductInterface } from "../interface/ProductsInterface";
+import { ProductsInterface } from "../interface/ProductsInterface";
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
 interface HeroProps {
-	products: ProductInterface[];
+	products: ProductsInterface[];
 }
 
 export default function Hero({ products }: HeroProps) {

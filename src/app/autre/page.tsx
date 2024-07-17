@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Others from "@/components/products/Others";
 import { OthersInterface } from "@/interface/OthersInterface";
-import othersData from "@/data/saltLightData.json";
+import othersData from "@/data/othersData.json";
 
 export default function OthersPage() {
 	const [products, setProducts] = useState<OthersInterface[]>([]);

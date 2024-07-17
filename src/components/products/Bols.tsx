@@ -7,11 +7,11 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-interface BowlsProps {
+interface BolsProps {
   products: BolInterface[];
 }
 
-export default function Bowls({ products }: BowlsProps) {
+export default function Bols({ products }: BolsProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

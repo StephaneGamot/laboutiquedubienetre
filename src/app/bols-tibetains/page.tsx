@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import Bowls from '@/components/products/Bowls';
+import Bols from '@/components/products/Bols';
 import { BolInterface } from '@/interface/BolInterface';
 import BolsData from '@/data/bolsData.json';
 
@@ -26,7 +26,7 @@ export default function BowlsPage() {
         <p className="mt-4 max-w-2xl text-lg text-emerald-700 mx-auto">
           Découvrez notre collection de bijoux soigneusement sélectionnés pour votre bien-être.
         </p>
-        <Bowls products={products} />
+        <Bols products={products} />
       </div>
     </main>
   );

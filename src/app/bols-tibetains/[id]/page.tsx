@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BolInterface } from '@/interface/BolInterface';
-import bolData from '@/data/bolData.json'
+import BolsData from '@/data/bolsData.json'
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';
 import { StarIcon as OutlineStarIcon } from '@heroicons/react/24/outline';
@@ -22,7 +22,7 @@ export default function ProductDetailsPage() {
 
   useEffect(() => {
     if (id) {
-      const foundProduct = bolData.find((p) => p.id === parseInt(id, 10));
+      const foundProduct = BolsData.find((p) => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
       if (foundProduct && foundProduct.colors) {
         setSelectedColor(foundProduct.colors[0].name); 

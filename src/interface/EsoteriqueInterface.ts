@@ -1,4 +1,4 @@
-export interface EsotericInterface {
+export interface EsoteriqueInterface {
   id: number;
   name: string;
   price: string;

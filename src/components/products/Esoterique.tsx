@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/20/solid';
-import { EsotericInterface } from '@/interface/EsotericInterface';
+import { EsoteriqueInterface } from '@/interface/EsoteriqueInterface';
 import Link from 'next/link';
 
 function classNames(...classes: string[]) {
@@ -8,10 +8,10 @@ function classNames(...classes: string[]) {
 }
 
 interface EsotericProps {
-  products: EsotericInterface[];
+  products: EsoteriqueInterface[];
 }
 
-export default function Esoteric ({ products }: EsotericProps) {
+export default function Esoterique ({ products }: EsotericProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">

@@ -2,8 +2,8 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { EsotericInterface } from "@/interface/EsotericInterface";
-import EsotericData from "@/data/esotericData.json";
+import { EsoteriqueInterface } from "@/interface/EsoteriqueInterface";
+import EsoteriqueData from "@/data/esoteriqueData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as OutlineStarIcon } from "@heroicons/react/24/outline";
@@ -17,12 +17,12 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
 	const params = useParams();
 	const id = Array.isArray(params.id) ? params.id[0] : params.id;
-	const [product, setProduct] = useState<EsotericInterface | null>(null);
+	const [product, setProduct] = useState<EsoteriqueInterface | null>(null);
 	const [selectedColor, setSelectedColor] = useState<string | undefined>("");
 
 	useEffect(() => {
 		if (id) {
-			const foundProduct = EsotericData.find((p) => p.id === parseInt(id, 10));
+			const foundProduct = EsoteriqueData.find((p) => p.id === parseInt(id, 10));
 			setProduct(foundProduct || null);
 			if (foundProduct && foundProduct.colors) {
 				setSelectedColor(foundProduct.colors[0].name);

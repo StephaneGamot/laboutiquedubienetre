@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Bols Tibétains",
-      "price": "149 €",
+      "price": "40€ - 850€",
       "rating": 5,
       "reviewCount": 38,
       "imageSrc": "/Images/bols/bol.webp",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Encens",
-      "price": "$15",
+      "price": "4€ - 250€",
       "rating": 5,
       "reviewCount": 18,
       "imageSrc": "/Images/encens/encens.webp",
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Purification",
-      "price": "$15",
+      "price": "4€ - 250€",
       "rating": 5,
       "reviewCount": 14,
       "imageSrc": "/Images/sauge/sauge.webp",
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "name": "Bougie",
-      "price": "$15",
+      "price": "4€ - 250€",
       "rating": 4,
       "reviewCount": 21,
       "imageSrc": "/Images/bougies/bougie.webp",
@@ -42,7 +42,7 @@
     }, {
         "id": 5,
         "name": "Bijoux",
-        "price": "$149",
+        "price": "4€ - 250€",
         "rating": 5,
         "reviewCount": 38,
         "imageSrc": "/Images/bijoux/bijoux.webp",
@@ -52,7 +52,7 @@
       {
         "id": 6,
         "name": "Spiritualité",
-        "price": "$15",
+        "price": "4€ - 20€",
         "rating": 5,
         "reviewCount": 18,
         "imageSrc": "/Images/spiritualite/jardin-zen.webp",
@@ -62,7 +62,7 @@
       {
         "id": 7,
         "name": "Vie Saine",
-        "price": "$15",
+        "price": "4€ - 250€",
         "rating": 5,
         "reviewCount": 14,
         "imageSrc": "/Images/vie-saine/vie-saine.webp",
@@ -72,7 +72,7 @@
       {
         "id": 8,
         "name": "Pierres Minérales",
-        "price": "$15",
+        "price": "4€ - 250€",
         "rating": 4,
         "reviewCount": 21,
         "imageSrc": "/Images/pierres/pierre-minerale.webp",
@@ -81,7 +81,7 @@
       }, {
         "id": 9,
         "name": "Lampes",
-        "price": "$15",
+        "price": "30€ - 250€",
         "rating": 5,
         "reviewCount": 21,
         "imageSrc": "/Images/lampes/lampe-sel.webp",
@@ -90,7 +90,7 @@
       }, {
         "id": 10,
         "name": "Esotérique",
-        "price": "$15",
+        "price": "3€ - 20€",
         "rating": 5,
         "reviewCount": 21,
         "imageSrc": "/Images/pendules/pendule.webp",
@@ -99,21 +99,21 @@
       },{
         "id": 11,
         "name": "Gua Sha",
-        "price": "$15",
+        "price": "4€ - 25€",
         "rating": 5,
         "reviewCount": 21,
         "imageSrc": "/Images/gua-sha/gua-sha.webp",
         "imageAlt": "TODO",
         "href": "gua-sha"
       },{
-        "id": 11,
-        "name": "Gua Sha",
-        "price": "$15",
+        "id": 12,
+        "name": "Autres",
+        "price": "4€ - 250€",
         "rating": 5,
         "reviewCount": 21,
-        "imageSrc": "/Images/gua-sha/gua-sha.webp",
+        "imageSrc": "/Images/autres/telescope.webp",
         "imageAlt": "TODO",
-        "href": "gua-sha"
+        "href": "/autre"
       }
   ]
   

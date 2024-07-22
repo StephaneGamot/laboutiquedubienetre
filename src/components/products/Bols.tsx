@@ -15,7 +15,7 @@ export default function Bols({ products }: BolsProps) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
-        <h2 className="sr-only">Lampe de sel</h2>
+        <h2 className="sr-only">Bols tibétains</h2>
 
         <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
@@ -31,13 +31,13 @@ export default function Bols({ products }: BolsProps) {
               </div>
               <div className="pb-4 pt-10 text-center">
                 <h3 className="text-sm font-medium text-gray-900">
-                  <Link href={`/lampes/${product.id}`}>
+                  <Link href={`/bols-tibetains/${product.id}`}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}
                   </Link>
                 </h3>
                 <div className="mt-3 flex flex-col items-center">
-                  <p className="sr-only">{product.rating} out of 5 stars</p>
+                  <p className="sr-only">{product.rating} sur 5 étoiles</p>
                   <div className="flex items-center">
                     {[0, 1, 2, 3, 4].map((rating) => (
                       <StarIcon

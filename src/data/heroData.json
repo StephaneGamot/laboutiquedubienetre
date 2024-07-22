@@ -105,6 +105,15 @@
         "imageSrc": "/Images/gua-sha/gua-sha.webp",
         "imageAlt": "TODO",
         "href": "gua-sha"
+      },{
+        "id": 11,
+        "name": "Gua Sha",
+        "price": "$15",
+        "rating": 5,
+        "reviewCount": 21,
+        "imageSrc": "/Images/gua-sha/gua-sha.webp",
+        "imageAlt": "TODO",
+        "href": "gua-sha"
       }
   ]
   

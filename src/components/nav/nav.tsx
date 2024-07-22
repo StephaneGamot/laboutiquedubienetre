@@ -58,7 +58,7 @@ const navigation: Navigation = {
       items: about,
     },
   ],
-  other: [{ name: "Contact", href: "#" }],
+  other: [{ name: "Contact", href: "/contact" }],
 };
 
 export default function Example() {

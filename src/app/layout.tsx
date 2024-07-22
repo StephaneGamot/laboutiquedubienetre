@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { EB_Garamond, Roboto, Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Nav from '@/components/nav/nav'
+import Footer from '@/components/footer/footer'
 
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400", "700"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${garamond.className} ${roboto.className} ${openSans.className} ${lora.className}`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

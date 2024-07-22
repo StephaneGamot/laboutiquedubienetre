@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Tous les lampes",
+    "name": "Bol tibétain argent ",
     "price": "$5",
     "rating": 4.5,
     "reviewCount": 25,
-    "imageSrc": "/Images/encens/multiples-encens.webp",
-    "imageAlt": "Lampe a la Lavande",
-    "href": "#",
-    "description": "Description for Tous les lampes",
+    "imageSrc": "/Images/bols/bol-chantant-argent/bol-chantant-1.webp",
+    "imageAlt": "Bols tibetain galvanisé d'argent",
+    "href": "/bols-tibetains/1",
+    "description": "Bol Tibétain plaqué argent ",
     "colors": [
       { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
     ],
     "images": [
-      { "id": 1, "name": "Image 1", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
-      { "id": 2, "name": "Image 2", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
-      { "id": 3, "name": "Image 3", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" },
-      { "id": 4, "name": "Image 4", "src": "/Images/encens/multiples-encens.webp", "alt": "Lampe a la Lavande" }
+      { "id": 1, "name": "Image 1", "src": "/Images/bols/bol-chantant-argent/bol-chantant-1.webp", "alt": "Bol tibétain plaqué argent vue du dessus" },
+      { "id": 2, "name": "Image 2", "src": "/Images/bols/bol-chantant-argent/bol-chantant-2.webp", "alt": "Bol tibétain plaqué argent mais ici on le voit de derriere et legerement sur le coté" },
+      { "id": 3, "name": "Image 3", "src": "/Images/bols/bol-chantant-argent/bol-chantant-3.webp", "alt": "Bol tibétain plaqué argent vue au-dessus mais légerement décalé " },
+      { "id": 4, "name": "Image 4", "src": "/Images/bols/bol-chantant-argent/bol-chantant-4.webp", "alt": "Bol tibétain plaqué argent vue sur le cul" }
     ],
     "details": [
       {

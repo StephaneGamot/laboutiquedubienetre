@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import JewelsAll from "@/components/products/JewelsAll";
+import JewelsAll from "@/components/products/bijoux/JewelsAll";
 import { JewelInterface } from "../../../interface/JewelsInterface";
-import jewelAllData from "./../../../data/jewelAllData.json";
+import jewelAllData from "@/data/bijoux/jewelAllData.json";
 
 export default function JewelsPage() {
 	const [products, setProducts] = useState<JewelInterface[]>([]);

@@ -31,13 +31,13 @@ export default function SaltLight({ products }: OthersProps) {
 									</Link>
 								</h3>
 								<div className="mt-3 flex flex-col items-center">
-									<p className="sr-only">{product.rating} out of 5 stars</p>
+									<p className="sr-only">{product.rating} sur 5 étoiles</p>
 									<div className="flex items-center">
 										{[0, 1, 2, 3, 4].map((rating) => (
 											<StarIcon key={rating} aria-hidden="true" className={classNames(product.rating > rating ? "text-yellow-400" : "text-gray-200", "h-5 w-5 flex-shrink-0")} />
 										))}
 									</div>
-									<p className="mt-1 text-sm text-gray-500">{product.reviewCount} reviews</p>
+									<p className="mt-1 text-sm text-gray-500">{product.reviewCount} évaluations</p>
 								</div>
 								<p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
 							</div>

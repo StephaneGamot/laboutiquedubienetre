@@ -2,8 +2,8 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { JewelInterface } from "@/interface/JewelsInterface";
-import JewelPendantData from "@/data/bijoux/JewelPendantData.json";
+import { EncensInterface } from "@/interface/EncensInterface";
+import encensStickData from "@/data/encens/encensStickData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as OutlineStarIcon } from "@heroicons/react/24/outline";
@@ -17,12 +17,12 @@ function classNames(...classes: string[]) {
 export default function ProductDetailsPage() {
 	const params = useParams();
 	const id = Array.isArray(params.id) ? params.id[0] : params.id;
-	const [product, setProduct] = useState<JewelInterface | null>(null);
+	const [product, setProduct] = useState<EncensInterface | null>(null);
 	const [selectedColor, setSelectedColor] = useState<string | undefined>("");
 
 	useEffect(() => {
 		if (id) {
-			const foundProduct = JewelPendantData.find((p) => p.id === parseInt(id, 10));
+			const foundProduct = encensStickData.find((p) => p.id === parseInt(id, 10));
 			setProduct(foundProduct || null);
 			if (foundProduct && foundProduct.colors) {
 				setSelectedColor(foundProduct.colors[0].name);

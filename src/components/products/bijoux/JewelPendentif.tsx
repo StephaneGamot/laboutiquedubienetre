@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { JewelInterface } from "../../interface/JewelsInterface";
+import { JewelInterface } from "@/interface/JewelsInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
@@ -11,7 +11,7 @@ interface JewelsProps {
 	products: JewelInterface[];
 }
 
-export default function JewelRing({ products }: JewelsProps) {
+export default function JewelPendentif({ products }: JewelsProps) {
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
@@ -25,19 +25,19 @@ export default function JewelRing({ products }: JewelsProps) {
 							</div>
 							<div className="pb-4 pt-10 text-center">
 								<h3 className="text-sm font-medium text-gray-900">
-									<Link href={`/bijoux/bague/${product.id}`}>
+									<Link href={`/bijoux/pendentif/${product.id}`}>
 										<span aria-hidden="true" className="absolute inset-0" />
 										{product.name}
 									</Link>
 								</h3>
 								<div className="mt-3 flex flex-col items-center">
-									<p className="sr-only">{product.rating} out of 5 stars</p>
+									<p className="sr-only">{product.rating} sur 5 étoiles</p>
 									<div className="flex items-center">
 										{[0, 1, 2, 3, 4].map((rating) => (
 											<StarIcon key={rating} aria-hidden="true" className={classNames(product.rating > rating ? "text-yellow-400" : "text-gray-200", "h-5 w-5 flex-shrink-0")} />
 										))}
 									</div>
-									<p className="mt-1 text-sm text-gray-500">{product.reviewCount} reviews</p>
+									<p className="mt-1 text-sm text-gray-500">{product.reviewCount} évaluations</p>
 								</div>
 								<p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
 							</div>

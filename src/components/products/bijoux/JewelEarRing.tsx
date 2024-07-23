@@ -1,21 +1,21 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { MineralesInterface } from "@/interface/MineralesInterface";
+import { JewelInterface } from "@/interface/JewelsInterface";
 import Link from "next/link";
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(" ");
 }
 
-interface MineralProps {
-	products: MineralesInterface[];
+interface JewelsProps {
+	products: JewelInterface[];
 }
 
-export default function Minerales({ products }: MineralProps) {
+export default function JewelEarRing({ products }: JewelsProps) {
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
-				<h2 className="sr-only">Pierres minérales</h2>
+				<h2 className="sr-only">Lampe de sel</h2>
 
 				<div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
 					{products.map((product) => (
@@ -25,7 +25,7 @@ export default function Minerales({ products }: MineralProps) {
 							</div>
 							<div className="pb-4 pt-10 text-center">
 								<h3 className="text-sm font-medium text-gray-900">
-									<Link href={`/pierre-minerale/${product.id}`}>
+									<Link href={`/bijoux/boucles-oreilles/${product.id}`}>
 										<span aria-hidden="true" className="absolute inset-0" />
 										{product.name}
 									</Link>

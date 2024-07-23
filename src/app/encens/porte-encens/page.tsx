@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import JewelEarRing from "@/components/products/bijoux/JewelEarRing";
-import { JewelInterface } from "../../../interface/JewelsInterface";
-import jewelEarRingData from "@/data/bijoux/jewelEaringData.json";
+import EncensPorteEncens from "@/components/products/encens/EncensPorteEncens";
+import { EncensInterface } from "@/interface/EncensInterface";
+import EncensPorteEncensData from "@/data/encens/encensPorteEncens.json";
 
-export default function JewelEarRingPage() {
-	const [products, setProducts] = useState<JewelInterface[]>([]);
+export default function PorteEncensPage() {
+	const [products, setProducts] = useState<EncensInterface[]>([]);
 
 	useEffect(() => {
 		// Simulate fetching data from an API or a file
-		setProducts(jewelEarRingData);
+		setProducts(EncensPorteEncensData);
 	}, []);
 
 	if (!products) {
@@ -22,7 +22,7 @@ export default function JewelEarRingPage() {
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 				<h1 className="text-3xl font-semibold tracking-tight text-emerald-800 sm:text-4xl lg:text-5xl">La Boutique du Bien-être & Spiritualité</h1>
 				<p className="mt-4 max-w-2xl text-lg text-emerald-700 mx-auto">Découvrez notre collection de bijoux soigneusement sélectionnés pour votre bien-être.</p>
-				<JewelEarRing products={products} />
+				<EncensPorteEncens products={products} />
 			</div>
 		</main>
 	);

@@ -11,13 +11,13 @@
     "description": "Bol chantant plaqué argent Bouddha Shakyamuni",
     "tailles": [
       { "name": "xs", "displayName": "±20cm ±1150g", "price": "159 €" },
-      { "name": "s", "displayName": "±21cm ±1150g", "price": "169 €" },
-      { "name": "m", "displayName": "±23cm ±1700g", "price": "179 €" },
-      { "name": "l", "displayName": "±25cm ±1750g", "price": "199 €" },
-      { "name": "xl", "displayName": "±29cm ±2600g", "price": "249 €" },
+      { "name": "s", "displayName": "±21cm ±1150g", "price": "179 €" },
+      { "name": "m", "displayName": "±23cm ±1700g", "price": "199 €" },
+      { "name": "l", "displayName": "±25cm ±1750g", "price": "239 €" },
+      { "name": "xl", "displayName": "±29cm ±2600g", "price": "269 €" },
       { "name": "xxl", "displayName": "±30cm ±2700g", "price": "299 €" }
     ],
- "poids":"20 à 25 cm",
+    "poids": "20 à 25 cm",
     "images": [
       { "id": 1, "name": "Image 1", "src": "/Images/bols/bol-chantant-argent/bol-chantant-1.webp", "alt": "Bol tibétain plaqué argent vue du dessus" },
       { "id": 2, "name": "Image 2", "src": "/Images/bols/bol-chantant-argent/bol-chantant-2.webp", "alt": "Bol tibétain plaqué argent mais ici on le voit de derriere et legerement sur le coté" },
@@ -25,6 +25,14 @@
       { "id": 4, "name": "Image 4", "src": "/Images/bols/bol-chantant-argent/bol-chantant-4.webp", "alt": "Bol tibétain plaqué argent vue sur le cul" }
     ],
     "details": [
+      {
+        "name": "Métal",
+        "items": "Bronze argenté"
+      },
+      {
+        "name": "Origine",
+        "items": "Népal"
+      },
       {
         "name": "En savoir ++",
         "items": ["Bol chantant en argent plaqué, décoré de symboles bouddhistes (Bouddha de la Médecine, cinq bouddhas Dhyani, double dorje, lotus, nœud sans fin) et du mantra « Om Mani Pad Me Hum ». La finition électrochimique donne une brillance argentée. Maillet en feutre vendu séparément. Poids variable, vendu à l'unité.", "Chaque bol chantant est soigneusement sélectionné pour son son riche, puis gravé et plaqué argent. Les motifs traditionnels sont gravés avec une précision laser, préservant les qualités acoustiques. Le placage argent est réalisé par galvanoplastie pour une finition uniforme.","L'argent, avec sa densité élevée et ses excellentes propriétés acoustiques, améliore la pureté du son du bol chantant, produisant un son clair et exaltant. La surface réfléchissante amplifie l'énergie, rendant le bol idéal pour la méditation et la guérison sonore.","Nos bols chantants sont fabriqués par des artisans experts au Népal, combinant des techniques traditionnelles ancestrales avec la technologie moderne."]

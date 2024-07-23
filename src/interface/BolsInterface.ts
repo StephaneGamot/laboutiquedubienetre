@@ -11,5 +11,5 @@ export interface BolsInterface {
   description?: string;
   tailles?: { name: string; displayName: string }[];
   poids?: string; 
-  details?: { name: string; items: string[] }[];
+  details?: { name: string; items: string | string[] }[];
 }

@@ -187,11 +187,15 @@ export default function ProductDetailsPage() {
                         </DisclosureButton>
                       </h3>
                       <DisclosurePanel className="prose prose-sm pb-6">
-                        <ul role="list">
-                          {detail.items.map((item) => (
-                            <li key={item}>{item}</li>
-                          ))}
-                        </ul>
+                        {typeof detail.items === 'string' ? (
+                          <p>{detail.items}</p>
+                        ) : (
+                          <ul role="list">
+                            {detail.items.map((item: string) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        )}
                       </DisclosurePanel>
                     </Disclosure>
                   ))}

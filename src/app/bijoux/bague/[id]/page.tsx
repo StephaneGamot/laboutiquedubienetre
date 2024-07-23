@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { JewelInterface } from "@/interface/JewelsInterface";
-import jewelRingData from "@/data/jewelRingData.json";
+import jewelRingData from "@/data/bijoux/jewelRingData.json";
 import Image from "next/image";
 import { StarIcon as SolidStarIcon } from "@heroicons/react/20/solid";
 import { StarIcon as OutlineStarIcon } from "@heroicons/react/24/outline";

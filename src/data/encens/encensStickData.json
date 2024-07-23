@@ -1,96 +1,77 @@
-  
-  
-  
-  
-  [
-    {
-      "id": 1,
-      "name": "Batons d'encens Sauge blanche",
-      "price": "0,99€",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/encens-sauge-blanche.webp",
-      "imageAlt": "encens Sauge blanche",
-      "href": "/encens/batons/1",
-      "description": "",
-      "images": [
-        { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-sauge-blanche.webp", "alt": "encens de sauge blanche en boite" }
-      ],
-      "details": [
-        {
-          "name": "Detail 1",
-          "items": ["Item 1", "Item 2"]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Batons d'encens traditionnel ayurveda",
-      "price": "0,99€",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/encens-traditionnel-ayurveda.webp",
-      "imageAlt": "Encens ayurvedique",
-      "href": "#",
-      "description": "",
-      "colors": [
-        { "name": "Yellow", "bgColor": "bg-yellow-500", "selectedColor": "ring-yellow-500" }
-      ],
-      "images": [
-        { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-traditionnel-ayurveda.webp", "alt": "Encens Santal" }
-      ],
-      "details": [
-        {
-          "name": "Detail 1",
-          "items": ["Item 1", "Item 2"]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Batons d'encens Nag Champa",
-      "price": "0,99€",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/encens-nag-shampa.webp",
-      "imageAlt": "bouts de résine",
-      "href": "#",
-      "description": "",
-      "colors": [
-        { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
-      ],
-      "images": [
-        { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-nag-shampa.webp", "alt": "Nag Shampa" }
-      ],
-      "details": [
-        {
-          "name": "Detail 1",
-          "items": ["Item 1", "Item 2"]
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Batôn d'encens Nag patchouli",
-      "price": "0,99€",
-      "rating": 5,
-      "reviewCount": 30,
-      "imageSrc": "/Images/encens/baton-encens/encens-nag-patchouli.webp",
-      "imageAlt": "Encens Santal",
-      "href": "#",
-      "description": "Description for Porte encens",
-      "colors": [
-        { "name": "Green", "bgColor": "bg-green-500", "selectedColor": "ring-green-500" }
-      ],
-      "images": [
-        { "id": 1, "name": "Image 1", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Nag patchouli" }
-      ],
-      "details": [
-        {
-          "name": "Detail 1",
-          "items": ["Item 1", "Item 2"]
-        }
-      ]
-    }
-  ]
-  
+[
+	{
+		"id": 1,
+		"name": "Batons d'encens Sauge blanche",
+		"price": "0,99€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-sauge-blanche.webp",
+		"imageAlt": "encens Sauge blanche",
+		"href": "",
+		"description": "Boite de 15gr",
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-sauge-blanche.webp", "alt": "encens de sauge blanche en boite" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Batons d'encens traditionnel ayurveda",
+		"price": "0,99€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-traditionnel-ayurveda.webp",
+		"imageAlt": "Encens ayurvedique",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Yellow", "bgColor": "bg-yellow-500", "selectedColor": "ring-yellow-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-traditionnel-ayurveda.webp", "alt": "Encens Santal" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Batons d'encens Nag Champa",
+		"price": "0,99€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-nag-shampa.webp",
+		"imageAlt": "bouts de résine",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-nag-shampa.webp", "alt": "Nag Shampa" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Batôn d'encens Nag patchouli",
+		"price": "0,99€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-nag-patchouli.webp",
+		"imageAlt": "Encens Santal",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Green", "bgColor": "bg-green-500", "selectedColor": "ring-green-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/portes-encens/portes-encens.webp", "alt": "Nag patchouli" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	}
+]

@@ -18,15 +18,13 @@ export default function ProductDetailsPage() {
 	const params = useParams();
 	const id = Array.isArray(params.id) ? params.id[0] : params.id;
 	const [product, setProduct] = useState<EncensInterface | null>(null);
-	const [selectedColor, setSelectedColor] = useState<string | undefined>("");
+
 
 	useEffect(() => {
 		if (id) {
 			const foundProduct = encensStickData.find((p) => p.id === parseInt(id, 10));
 			setProduct(foundProduct || null);
-			if (foundProduct && foundProduct.colors) {
-				setSelectedColor(foundProduct.colors[0].name);
-			}
+		
 		}
 	}, [id]);
 
@@ -118,28 +116,7 @@ export default function ProductDetailsPage() {
 						</div>
 
 						<form className="mt-6">
-							{product.colors && (
-								<div>
-									<h3 className="text-sm font-medium text-gray-600">Color</h3>
-									<fieldset aria-label="Choose a color" className="mt-2">
-										<RadioGroup value={selectedColor} onChange={setSelectedColor} className="flex items-center space-x-3">
-											{product.colors.map((color) => (
-												<Radio
-													key={color.name}
-													value={color.name}
-													aria-label={color.name}
-													className={classNames(
-														color.selectedColor,
-														"relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1"
-													)}>
-													<span aria-hidden="true" className={classNames(color.bgColor, "h-8 w-8 rounded-full border border-black border-opacity-10")} />
-												</Radio>
-											))}
-										</RadioGroup>
-									</fieldset>
-								</div>
-							)}
-
+							
 							<div className="mt-10 flex">
 								<button
 									type="submit"

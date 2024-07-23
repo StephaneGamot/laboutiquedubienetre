@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BolsInterface } from '@/interface/BolsInterface';
-import BolsData from '@/data/bolsData.json'
+import BolsData from '@/data/bolsData.json';
 import Image from 'next/image';
 import { StarIcon as SolidStarIcon } from '@heroicons/react/20/solid';
 import { StarIcon as OutlineStarIcon } from '@heroicons/react/24/outline';
@@ -18,17 +18,29 @@ export default function ProductDetailsPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id; 
   const [product, setProduct] = useState<BolsInterface | null>(null);
-  const [selectedColor, setSelectedColor] = useState<string | undefined>(""); 
+  const [selectedTaille, setSelectedTaille] = useState<string | undefined>(""); 
+  const [selectedPoids, setSelectedPoids] = useState<string | undefined>(""); 
+  const [currentPrice, setCurrentPrice] = useState<string>("");
 
   useEffect(() => {
     if (id) {
       const foundProduct = BolsData.find((p) => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
-      if (foundProduct && foundProduct.colors) {
-        setSelectedColor(foundProduct.colors[0].name); 
+      if (foundProduct && foundProduct.tailles) {
+        setSelectedTaille(foundProduct.tailles[0].name); 
+        setCurrentPrice(foundProduct.tailles[0].price);
       }
     }
   }, [id]);
+
+  useEffect(() => {
+    if (product && selectedTaille) {
+      const selectedTailleObject = product.tailles?.find(t => t.name === selectedTaille);
+      if (selectedTailleObject) {
+        setCurrentPrice(selectedTailleObject.price);
+      }
+    }
+  }, [selectedTaille, product]);
 
   if (!product) {
     return <div>Loading...</div>;
@@ -104,11 +116,11 @@ export default function ProductDetailsPage() {
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">{product.name}</h1>
             <div className="mt-3">
               <h2 className="sr-only">Information sur le produit ciblé</h2>
-              <p className="text-3xl tracking-tight text-gray-900">{product.price}</p>
+              <p className="text-3xl tracking-tight text-gray-900">{currentPrice}</p>
             </div>
 
             <div className="mt-3">
-              <h3 className="sr-only">Notes</h3>
+              <h3 className="sr-only">Evaluations</h3>
               {renderStars(product.rating)}
               <p className="sr-only">{product.rating} jusque 5 étoiles</p>
             </div>
@@ -119,32 +131,34 @@ export default function ProductDetailsPage() {
             </div>
 
             <form className="mt-6">
-              {product.colors && (
+              {product.tailles && (
                 <div>
-                  <h3 className="text-sm font-medium text-gray-600">Color</h3>
-                  <fieldset aria-label="Choose a color" className="mt-2">
-                    <RadioGroup value={selectedColor} onChange={setSelectedColor} className="flex items-center space-x-3">
-                      {product.colors.map((color) => (
+                  <h3 className="text-sm font-medium text-gray-600">Taille</h3>
+                  <fieldset aria-label="Choisir une taille" className="mt-2">
+                    <RadioGroup value={selectedTaille} onChange={setSelectedTaille} className="flex items-center space-x-3">
+                      {product.tailles.map((taille) => (
                         <Radio
-                          key={color.name}
-                          value={color.name}
-                          aria-label={color.name}
+                          key={taille.name}
+                          value={taille.name}
+                          aria-label={taille.name}
                           className={classNames(
-                            color.selectedColor,
-                            "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1"
-                          )}>
-                          <span aria-hidden="true" className={classNames(color.bgColor, "h-8 w-8 rounded-full border border-black border-opacity-10")} />
+                            "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-lg p-2 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1"
+                          )}
+                        >
+                          <span aria-hidden="true" className="px-3 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-900 flex items-center justify-center">
+                            {taille.displayName}
+                          </span>
                         </Radio>
                       ))}
                     </RadioGroup>
                   </fieldset>
                 </div>
               )}
-
+             
               <div className="mt-10 flex">
                 <button
                   type="submit"
-                  className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-emerald-700 px-8 py-3 text-base font-medium text-white hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full">
+                  className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-emerald-700 px-8 py-3 text-base font-medium text-white hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full">
                  Ajouter au panier
                 </button>
 

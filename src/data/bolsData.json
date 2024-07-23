@@ -1,17 +1,23 @@
 [
   {
     "id": 1,
-    "name": "Bol tibétain argent ",
-    "price": "$5",
-    "rating": 4.5,
+    "name": "Bol tibétain plaqué argent Bouddha Médecine",
+    "price": "159 € - 299 €",
+    "rating": 5,
     "reviewCount": 25,
     "imageSrc": "/Images/bols/bol-chantant-argent/bol-chantant-1.webp",
     "imageAlt": "Bols tibetain galvanisé d'argent",
     "href": "/bols-tibetains/1",
-    "description": "Bol Tibétain plaqué argent ",
-    "colors": [
-      { "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }
+    "description": "Bol chantant plaqué argent Bouddha Shakyamuni",
+    "tailles": [
+      { "name": "xs", "displayName": "±20cm ±1150g", "price": "159 €" },
+      { "name": "s", "displayName": "±21cm ±1150g", "price": "169 €" },
+      { "name": "m", "displayName": "±23cm ±1700g", "price": "179 €" },
+      { "name": "l", "displayName": "±25cm ±1750g", "price": "199 €" },
+      { "name": "xl", "displayName": "±29cm ±2600g", "price": "249 €" },
+      { "name": "xxl", "displayName": "±30cm ±2700g", "price": "299 €" }
     ],
+ "poids":"20 à 25 cm",
     "images": [
       { "id": 1, "name": "Image 1", "src": "/Images/bols/bol-chantant-argent/bol-chantant-1.webp", "alt": "Bol tibétain plaqué argent vue du dessus" },
       { "id": 2, "name": "Image 2", "src": "/Images/bols/bol-chantant-argent/bol-chantant-2.webp", "alt": "Bol tibétain plaqué argent mais ici on le voit de derriere et legerement sur le coté" },
@@ -20,34 +26,8 @@
     ],
     "details": [
       {
-        "name": "Detail 1",
-        "items": ["Item 1", "Item 2"]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Lampe rose",
-    "price": "$6",
-    "rating": 5,
-    "reviewCount": 30,
-    "imageSrc": "/Images/encens/baton-encens/baton-encens.webp",
-    "imageAlt": "Lampe Santal",
-    "href": "#",
-    "description": "Description for Lampe rose",
-    "colors": [
-      { "name": "Pink", "bgColor": "bg-pink-500", "selectedColor": "ring-pink-500" }
-    ],
-    "images": [
-      { "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
-      { "id": 2, "name": "Image 2", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
-      { "id": 3, "name": "Image 3", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" },
-      { "id": 4, "name": "Image 4", "src": "/Images/encens/baton-encens/baton-encens.webp", "alt": "Lampe Santal" }
-    ],
-    "details": [
-      {
-        "name": "Detail 1",
-        "items": ["Item 1", "Item 2"]
+        "name": "En savoir ++",
+        "items": ["Bol chantant en argent plaqué, décoré de symboles bouddhistes (Bouddha de la Médecine, cinq bouddhas Dhyani, double dorje, lotus, nœud sans fin) et du mantra « Om Mani Pad Me Hum ». La finition électrochimique donne une brillance argentée. Maillet en feutre vendu séparément. Poids variable, vendu à l'unité.", "Chaque bol chantant est soigneusement sélectionné pour son son riche, puis gravé et plaqué argent. Les motifs traditionnels sont gravés avec une précision laser, préservant les qualités acoustiques. Le placage argent est réalisé par galvanoplastie pour une finition uniforme.","L'argent, avec sa densité élevée et ses excellentes propriétés acoustiques, améliore la pureté du son du bol chantant, produisant un son clair et exaltant. La surface réfléchissante amplifie l'énergie, rendant le bol idéal pour la méditation et la guérison sonore.","Nos bols chantants sont fabriqués par des artisans experts au Népal, combinant des techniques traditionnelles ancestrales avec la technologie moderne."]
       }
     ]
   }

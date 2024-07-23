@@ -50,9 +50,13 @@ export default function Bols({ products }: BolsProps) {
                       />
                     ))}
                   </div>
-                  <p className="mt-1 text-sm text-gray-500">{product.reviewCount} reviews</p>
+                  <p className="mt-1 text-sm text-gray-500">{product.reviewCount} évaluations</p>
                 </div>
                 <p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
+                {product.tailles && (
+                  <p className="mt-2 text-sm text-gray-500">Taille: {product.poids}</p>
+                )}
+               
               </div>
             </div>
           ))}

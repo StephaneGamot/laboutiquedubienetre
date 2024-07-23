@@ -9,7 +9,7 @@ export interface BolsInterface {
   href: string;
   images?: { id: number; name: string; src: string; alt: string }[];
   description?: string;
-  tailles?: { name: string; displayName: string }[];
+  tailles?: { name: string; displayName: string; price: string }[];
   poids?: string; 
   details?: { name: string; items: string | string[] }[];
 }

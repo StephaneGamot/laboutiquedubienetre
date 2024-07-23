@@ -19,7 +19,6 @@ export default function ProductDetailsPage() {
   const id = Array.isArray(params.id) ? params.id[0] : params.id; 
   const [product, setProduct] = useState<BolsInterface | null>(null);
   const [selectedTaille, setSelectedTaille] = useState<string | undefined>(""); 
-  const [selectedPoids, setSelectedPoids] = useState<string | undefined>(""); 
   const [currentPrice, setCurrentPrice] = useState<string>("");
 
   useEffect(() => {
@@ -36,7 +35,7 @@ export default function ProductDetailsPage() {
   useEffect(() => {
     if (product && selectedTaille) {
       const selectedTailleObject = product.tailles?.find(t => t.name === selectedTaille);
-      if (selectedTailleObject) {
+      if (selectedTailleObject && selectedTailleObject.price) {
         setCurrentPrice(selectedTailleObject.price);
       }
     }

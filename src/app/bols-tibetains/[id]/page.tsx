@@ -68,7 +68,7 @@ export default function ProductDetailsPage() {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           <TabGroup className="flex flex-col-reverse">
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+            <div className="mx-auto mt-6 w-full max-w-2xl sm:block lg:max-w-none">
               <TabList className="grid grid-cols-4 gap-6">
                 {product.images?.map((image, index) => (
                   <Tab
@@ -130,29 +130,33 @@ export default function ProductDetailsPage() {
             </div>
 
             <form className="mt-6">
-              {product.tailles && (
-                <div>
-                  <h3 className="text-sm font-medium text-gray-600">Taille</h3>
-                  <fieldset aria-label="Choisir une taille" className="mt-2">
-                    <RadioGroup value={selectedTaille} onChange={setSelectedTaille} className="flex items-center space-x-3">
-                      {product.tailles.map((taille) => (
-                        <Radio
-                          key={taille.name}
-                          value={taille.name}
-                          aria-label={taille.name}
-                          className={classNames(
-                            "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-lg p-2 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1"
-                          )}
-                        >
-                          <span aria-hidden="true" className="px-3 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-900 flex items-center justify-center">
+            {product.tailles && (
+  <div>
+    <h3 className="text-sm font-medium text-gray-600">Tailles</h3>
+    <fieldset aria-label="Choisir une taille" className="mt-2">
+      <RadioGroup value={selectedTaille} onChange={setSelectedTaille} className="flex flex-wrap items-center gap-2">
+        {product.tailles.map((taille) => (
+          <Radio
+            key={taille.name}
+            value={taille.name}
+            aria-label={taille.name}
+            className={classNames(
+              "relative m-1 flex cursor-pointer items-center justify-center rounded-lg p-2 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1"
+            )}
+          >
+            <span aria-hidden="true" className="px-3 py-2 max-w-[80px] rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-900 flex items-center justify-center">
                             {taille.displayName}
                           </span>
-                        </Radio>
-                      ))}
-                    </RadioGroup>
-                  </fieldset>
-                </div>
-              )}
+          </Radio>
+        ))}
+      </RadioGroup>
+    </fieldset>
+  </div>
+)}
+
+
+
+
              
               <div className="mt-10 flex">
                 <button
@@ -201,6 +205,53 @@ export default function ProductDetailsPage() {
                 </div>
               </section>
             )}
+          </div>
+        </div>
+
+      {/* Video Section */}
+<div className="mt-12">
+  <h2 className="text-2xl font-bold tracking-tight text-gray-900">Vidéo du produit</h2>
+  <div className="mt-6 relative" style={{ paddingBottom: '56.25%' /* 16:9 ratio */ }}>
+    <iframe 
+      className="absolute top-0 left-0 w-full h-full rounded-md"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+
+        {/* Testimonials Section */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Avis des clients</h2>
+          <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div className="flex flex-col rounded-lg bg-white shadow-lg overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <SolidStarIcon key={i} className="text-yellow-400 h-5 w-5 flex-shrink-0" />
+                  ))}
+                </div>
+                <p className="text-lg font-medium text-gray-900 mt-2">Excellent produit !</p>
+                <p className="mt-2 text-base text-gray-600">J&apos;ai été vraiment satisfait de mon achat, la qualité est excellente et la livraison rapide.</p>
+                <p className="mt-4 text-sm font-medium text-gray-900">- Jean Dupont</p>
+              </div>
+            </div>
+            <div className="flex flex-col rounded-lg bg-white shadow-lg overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <SolidStarIcon key={i} className="text-yellow-400 h-5 w-5 flex-shrink-0" />
+                  ))}
+                </div>
+                <p className="text-lg font-medium text-gray-900 mt-2">Très bon service</p>
+                <p className="mt-2 text-base text-gray-600">Le service client est super réactif et le produit correspond parfaitement à la description.</p>
+                <p className="mt-4 text-sm font-medium text-gray-900">- Marie Curie</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

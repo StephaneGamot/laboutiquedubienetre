@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Batons d'encens Sauge blanche",
-		"price": "0,99€",
+		"price": "1,29€",
 		"rating": 5,
 		"reviewCount": 30,
 		"imageSrc": "/Images/encens/baton-encens/encens-sauge-blanche.webp",
@@ -20,7 +20,7 @@
 	{
 		"id": 2,
 		"name": "Batons d'encens traditionnel ayurveda",
-		"price": "0,99€",
+		"price": "1,29€",
 		"rating": 5,
 		"reviewCount": 30,
 		"imageSrc": "/Images/encens/baton-encens/encens-traditionnel-ayurveda.webp",
@@ -39,7 +39,7 @@
 	{
 		"id": 3,
 		"name": "Batons d'encens Nag Champa",
-		"price": "0,99€",
+		"price": "1,29€",
 		"rating": 5,
 		"reviewCount": 30,
 		"imageSrc": "/Images/encens/baton-encens/encens-nag-shampa.webp",
@@ -51,14 +51,14 @@
 		"details": [
 			{
 				"name": "En savoir ++ ",
-				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde", "Nag Champa est un encens ( ingrédients naturels - herbes , résines et masala ) roulé à la main, mélange de fleurs, épices et résines, brûlant pendant 45 minutes. Son parfum délicat et terreux améliore l'humeur et l'environnement."]
 			}
 		]
 	},
 	{
 		"id": 4,
 		"name": "Batôn d'encens Nag patchouli",
-		"price": "0,99€",
+		"price": "1,29€",
 		"rating": 5,
 		"reviewCount": 30,
 		"imageSrc": "/Images/encens/baton-encens/encens-nag-patchouli.webp",
@@ -71,6 +71,116 @@
 			{
 				"name": "En savoir ++ ",
 				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},{
+		"id": 5,
+		"name": "Batons d'encens Meditation",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-meditation.webp",
+		"imageAlt": "encens méditation",
+		"href": "",
+		"description": "Boite de 15gr",
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-meditation.webp", "alt": "encens de méditation" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Batons d'encens Musk",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-musk.webp",
+		"imageAlt": "Encens musk",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Yellow", "bgColor": "bg-yellow-500", "selectedColor": "ring-yellow-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-musk.webp", "alt": "Encens musk" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "Batons d'encens Namaste",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-namaste.webp",
+		"imageAlt": "Baton de namaste",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-namaste.webp", "alt": "Nag Shampa" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde", "Nag Champa est un encens ( ingrédients naturels - herbes , résines et masala ) roulé à la main, mélange de fleurs, épices et résines, brûlant pendant 45 minutes. Son parfum délicat et terreux améliore l'humeur et l'environnement."]
+			}
+		]
+	},{
+		"id": 8,
+		"name": "Batons d'encens Palo Santo",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-palo-santo.webp",
+		"imageAlt": "encens Palo santo",
+		"href": "",
+		"description": "Boite de 15gr",
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-palo-santo.webp", "alt": "encens de palo santo en boite" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 9,
+		"name": "Batons d'encens Reiki",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-reiki.webp",
+		"imageAlt": "Encens reiki",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Yellow", "bgColor": "bg-yellow-500", "selectedColor": "ring-yellow-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-reiki.webp", "alt": "Encens Reiki" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde"]
+			}
+		]
+	},
+	{
+		"id": 10,
+		"name": "Batons encens spiritual healing",
+		"price": "1,29€",
+		"rating": 5,
+		"reviewCount": 30,
+		"imageSrc": "/Images/encens/baton-encens/encens-spiritual-healing.webp",
+		"imageAlt": "encens spiritual healing",
+		"href": "#",
+		"description": "Boite de 15gr",
+		"colors": [{ "name": "Red", "bgColor": "bg-red-500", "selectedColor": "ring-red-500" }],
+		"images": [{ "id": 1, "name": "Image 1", "src": "/Images/encens/baton-encens/encens-spiritual-healing.webp", "alt": "encens-spiritual-healing" }],
+		"details": [
+			{
+				"name": "En savoir ++ ",
+				"items": ["Taille : 22cm ", "Temps de combustion : 45 à 60 min", "Pays d'origine : Inde", "Nag Champa est un encens ( ingrédients naturels - herbes , résines et masala ) roulé à la main, mélange de fleurs, épices et résines, brûlant pendant 45 minutes. Son parfum délicat et terreux améliore l'humeur et l'environnement."]
 			}
 		]
 	}

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/react";
 import { MagnifyingGlassIcon, ShoppingBagIcon, Bars3Icon, XMarkIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -63,16 +63,26 @@ const navigation: Navigation = {
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activePopover, setActivePopover] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (activePopover) {
+      const timer = setTimeout(() => {
+        setActivePopover(null);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [activePopover]);
 
   return (
-    <div className="bg-white">
-      <header className="relative bg-white z-10">
-        <nav aria-label="Top" className="sticky top-0 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-white shadow">
-          <div className="flex flex-col lg:flex-row items-center justify-between border-b border-gray-200 px-4 sm:px-0">
+    <div className="bg-black text-white">
+      <header className="relative bg-black z-10">
+        <nav aria-label="Top" className="sticky top-0 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-black shadow">
+          <div className="flex flex-col lg:flex-row items-center justify-between border-b border-gray-700 px-4 sm:px-0">
             <div className="flex w-full items-center justify-between lg:hidden">
               <button
                 type="button"
-                className="p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+                className="p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-800"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 <span className="sr-only">Open main menu</span>
@@ -80,13 +90,13 @@ export default function Nav() {
               </button>
               <Link href="/" className="flex items-center">
                 <span className="sr-only">La boutique du bien-etre & spiritualité</span>
-                <Image className="h-16 w-auto" src={Logo} alt="Logo représentant une fleur de lotus" />
+                <Image className="h-12  w-auto" src={Logo} alt="Logo représentant une fleur de lotus" />
               </Link>
               <Link href="#" className="group -m-2 flex items-center p-2">
-                  <ShoppingBagIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-emerald-700" />
-                  <span className="ml-2 text-sm font-medium text-grisPierre group-hover:text-emerald-700">0</span>
-                  <span className="sr-only">items in cart, view bag</span>
-                </Link>
+                <ShoppingBagIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-emerald-700" />
+                <span className="ml-2 text-sm font-medium text-white group-hover:text-emerald-700">0</span>
+                <span className="sr-only">items in cart, view bag</span>
+              </Link>
             </div>
             <div className="w-full py-2 lg:hidden">
               <input
@@ -95,11 +105,11 @@ export default function Nav() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-700 focus:border-emerald-700"
               />
             </div>
-            <div className="hidden lg:flex items-center justify-between w-full">
+            <div className="hidden lg:flex items-center justify-between h-20 w-full">
               <div className="flex items-center">
                 <Link href="/" className="flex items-center">
                   <span className="sr-only">La boutique du bien-etre & spiritualité</span>
-                  <Image className="h-16 w-auto" src={Logo} alt="Logo représentant une fleur de lotus" />
+                  <Image className="h-12  w-auto" src={Logo} alt="Logo représentant une fleur de lotus" />
                 </Link>
               </div>
               <div className="flex-grow mx-4">
@@ -110,13 +120,13 @@ export default function Nav() {
                 />
               </div>
               <div className="flex items-center space-x-4">
-                <Link href="#" className="text-sm font-semibold leading-6 text-grisPierre hover:text-emerald-700">
+                <Link href="#" className="text-sm font-semibold leading-6 text-white hover:text-emerald-700">
                   Log in <span aria-hidden="true">&rarr;</span>
                 </Link>
-                
+               
                 <Link href="#" className="group -m-2 flex items-center p-2">
                   <ShoppingBagIcon aria-hidden="true" className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-emerald-700" />
-                  <span className="ml-2 text-sm font-medium text-grisPierre group-hover:text-emerald-700">0</span>
+                  <span className="ml-2 text-sm font-medium text-white group-hover:text-emerald-700">0</span>
                   <span className="sr-only">items in cart, view bag</span>
                 </Link>
               </div>
@@ -124,28 +134,37 @@ export default function Nav() {
           </div>
 
           {/* Navigation */}
-          <div className="border-b border-gray-200 px-4 sm:px-0 flex items-center justify-center lg:h-16">
+          <div className="border-b border-gray-700 px-4 sm:px-0 flex items-center justify-center lg:h-16">
             <PopoverGroup className="hidden lg:flex lg:flex-1 lg:justify-center">
               <div className="flex space-x-8 overflow-x-auto px-4 sm:overflow-visible whitespace-nowrap">
                 {navigation.categories.map((category, categoryIdx) => (
-                  <Popover key={categoryIdx} className="flex">
+                  <Popover
+                    key={categoryIdx}
+                    className="flex"
+                    onMouseEnter={() => setActivePopover(category.name)}
+                    onMouseLeave={() => setActivePopover(null)}
+                  >
                     <div className="relative flex">
-                      <PopoverButton className="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-grisPierre transition-colors duration-200 ease-out hover:text-emerald-700 data-[open]:bg-white data-[open]:text-emerald-700">
+                      <PopoverButton className="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-white transition-colors duration-200 ease-out hover:text-emerald-700 data-[open]:bg-black data-[open]:text-emerald-700">
                         {category.name}
                       </PopoverButton>
                     </div>
 
-                    <PopoverPanel className="absolute inset-x-0 top-full text-gray-500 transition data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in sm:text-sm">
-                      <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow" />
-                      <div className="relative bg-white">
+                    <PopoverPanel
+                      className={`absolute inset-x-0 top-full text-gray-500 transition data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in sm:text-sm ${
+                        activePopover === category.name ? "opacity-100" : "opacity-0"
+                      }`}
+                    >
+                      <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-black shadow" />
+                      <div className="relative bg-black">
                         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 pb-2 pt-2">
                             {category.items.map((item) => (
                               <div key={item.name} className="flex flex-col items-start">
-                                <Link href={item.href} className="text-sm font-bold text-grisPierre hover:text-emerald-700">
+                                <Link href={item.href} className="text-sm font-bold text-white hover:text-emerald-700">
                                   {item.name}
                                 </Link>
-                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                <p className="mt-1 text-sm text-gray-400">{item.description}</p>
                               </div>
                             ))}
                           </div>
@@ -154,9 +173,8 @@ export default function Nav() {
                     </PopoverPanel>
                   </Popover>
                 ))}
-
                 {navigation.other.map((item) => (
-                  <a key={item.name} href={item.href} className="flex items-center text-sm font-medium text-grisPierre hover:text-emerald-700">
+                  <a key={item.name} href={item.href} className="flex items-center text-sm font-medium text-white hover:text-emerald-700">
                     {item.name}
                   </a>
                 ))}
@@ -170,14 +188,14 @@ export default function Nav() {
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.categories.map((category, categoryIdx) => (
                   <Popover key={categoryIdx} className="flex w-full">
-                    <PopoverButton className="flex w-full items-center justify-between px-3 py-2 text-base font-medium text-grisPierre hover:bg-emerald-700 hover:text-white data-[open]:bg-emerald-700 data-[open]:text-white">
+                    <PopoverButton className="flex w-full items-center justify-between px-3 py-2 text-base font-medium text-white hover:bg-gray-900  hover:text-emerald-600 data-[open]:bg-black data-[open]:text-white">
                       {category.name}
                       <ChevronDownIcon className="ml-2 h-5 w-5 text-gray-400" aria-hidden="true" />
                     </PopoverButton>
-                    <PopoverPanel className="w-full bg-white">
-                      <div className="grid grid-cols-1 gap-x-6 gap-y-4 px-4 pt-4 pb-8 bg-emerald-700 text-white">
+                    <PopoverPanel className="w-full bg-black">
+                      <div className="grid grid-cols-1 gap-x-6 gap-y-4 px-4 pt-4 pb-8 bg-black text-white">
                         {category.items.map((item) => (
-                          <Link key={item.name} href={item.href} className="text-sm font-medium text-white hover:text-gray-200">
+                          <Link key={item.name} href={item.href} className="text-sm font-medium text-white hover:text-emerald-600">
                             {item.name}
                           </Link>
                         ))}
@@ -186,18 +204,22 @@ export default function Nav() {
                   </Popover>
                 ))}
                 {navigation.other.map((item) => (
-                  <Link key={item.name} href={item.href} className="block w-full px-3 py-2 text-base font-medium text-grisPierre hover:bg-emerald-700 hover:text-white">
+                  <Link key={item.name} href={item.href} className="block w-full px-3 py-2 text-base font-medium text-white hover:text-emerald-600">
                     {item.name}
                   </Link>
                 ))}
               </div>
-              <div className="border-t border-gray-200 pt-4 pb-3">
+              <div className="border-t border-gray-700 pt-4 pb-3">
                 <div className="space-y-1 px-2">
-                <Link href="#" className="text-sm font-semibold leading-6 text-grisPierre hover:text-emerald-700">
-                  Log in <span aria-hidden="true">&rarr;</span>
-                </Link>
-                 
-                 
+                  <Link href="#" className="block px-3 py-2 text-base font-medium text-white hover:text-emerald-600">
+                    Log in
+                  </Link>
+                  
+                  <Link href="#" className="group -m-2 flex items-center p-2">
+                    <ShoppingBagIcon aria-hidden="true" className="h-6 w-6 ml-2 flex-shrink-0 text-gray-400 group-hover:text-emerald-600" />
+                    <span className="ml-2 text-sm font-medium text-white group-hover:text-emerald-600">0</span>
+                    <span className="sr-only">items in cart, view bag</span>
+                  </Link>
                 </div>
               </div>
             </div>

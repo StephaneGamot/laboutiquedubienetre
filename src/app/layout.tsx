@@ -3,6 +3,7 @@ import { EB_Garamond, Roboto, Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Nav from '@/components/nav/nav'
 import Footer from '@/components/footer/footer'
+import Head from "next/head";
 
 
 const garamond = EB_Garamond({ subsets: ["latin"], weight: ["400", "700"] });
@@ -23,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+     <Head>
+        <meta
+          name="google-site-verification"
+          content="gHWOr5RkqdkrzsYM5_KJuG4-jbHmqzX0vCKDIOgNCcA"
+        />
+      </Head>
       <body className={`${garamond.className} ${roboto.className} ${openSans.className} ${lora.className}`}>
         <Nav />
         {children}

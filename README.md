@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ La Boutique du Bien-Être ( PROJET ARRETÉ POUR CAUSE DE RUPTURE ENTRE LES PROPRIÉTAIRES DU FUTUR SITE E-COMMERCE )
+🌐 [Voir début du projet](https://laboutiquedubienetre-7tp7ykdls-white-wolf-webs-projects.vercel.app/) 
 
-## Getting Started
+**La Boutique du Bien-Être** est une plateforme e-commerce dédiée aux produits naturels, aux soins du corps et à l'harmonie intérieure. Pensée pour une expérience fluide, élégante et sécurisée, cette boutique en ligne s'adresse à un public soucieux de bien-être, d'éthique et de qualité.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌱 Objectifs
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Offrir une expérience d’achat apaisante, moderne et intuitive
+- Mettre en avant des produits naturels, bio et éthiques
+- Permettre une gestion complète (front + back) des commandes, paiements et livraisons
+- Intégrer un contenu inspirant autour du bien-être (articles, conseils, routines)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🧰 Stack technique
 
-## Learn More
+### Front-End
+- **Next.js** avec App Router
+- **Tailwind CSS** pour un design sobre et élégant
+- **TypeScript** pour la robustesse
+- **Stripe** pour les paiements sécurisés
+- **i18n** (internationalisation en FR / EN / NL)
+- **SEO optimisé** (balises dynamiques, JSON-LD, métadonnées multilingues)
 
-To learn more about Next.js, take a look at the following resources:
+### Back-End
+- **Spring Boot (Java 17)** pour l'API REST
+- **MySQL** comme base de données relationnelle
+- **JWT Auth** + OAuth2 (Google)
+- **Admin Panel personnalisé** pour la gestion produits / commandes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ✨ Fonctionnalités principales
 
-## Deploy on Vercel
+- 🔍 Recherche intelligente et filtres avancés (catégories, ingrédients, bienfaits)
+- 🛒 Panier dynamique, gestion des stocks en temps réel
+- 💳 Paiement Stripe 100% sécurisé
+- 👤 Espace client : suivi commandes, wishlist, historique
+- 🔐 Authentification par email ou Google
+- 🧘‍♀️ Blog intégré avec conseils bien-être et rituels
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Stéphane Gamot**  
+🎯 Développeur Full-Stack spécialisé React / Next.js - Java
+📍 Basé en Belgique – Freelance / Consultant  
+📫 [stephanegamot@outlook.com](mailto:stephanegamot@outlook.com)  
+🌐 [Portfolio](https://www.creation-site-internet.dev/fr/stephane-gamot/portfolio)
+🔗 [LinkedIn](https://www.linkedin.com/in/stephanegamot/) 
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence MIT.  
+Merci de respecter le contenu, les visuels et la philosophie du site dans toute réutilisation.
+
+
+

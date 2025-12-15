@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        destination: "https://www.stephanegamot.com/",
+        permanent: true,
+      },
+    ];
+  },
+
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -7,6 +17,7 @@ const nextConfig = {
     });
     return config;
   },
+
   images: {
     remotePatterns: [
       {
